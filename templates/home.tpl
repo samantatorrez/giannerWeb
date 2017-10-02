@@ -1,5 +1,3 @@
-{include file="head.tpl"}
-<div id="contenido">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-8 noPadding">
@@ -19,5 +17,3 @@
       </div>
     </div>
   </div>
-</div>
-{include file="foot.tpl"}
