@@ -6,7 +6,7 @@
   //include_once 'model/Model.php';
   include_once 'view/View.php';
   include_once 'controller/Controller.php';
-  include_once 'controller/index_Controller.php';
+  include_once 'controller/navigationBarController.php';
 
   function parseURL($url)
   {

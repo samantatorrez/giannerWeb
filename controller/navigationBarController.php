@@ -1,13 +1,13 @@
 <?php
   include_once 'controller/controller.php';
-  include_once 'view/index_View.php';
+  include_once 'view/navigationBarView.php';
 
-  class index_Controller extends Controller
+  class navigationBarController extends Controller
   {
 
     function __construct()
     {
-      $this->view = new index_View();
+      $this->view = new navigationBarView();
     }
 
     public function mostrarIndex()

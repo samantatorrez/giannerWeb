@@ -1,7 +1,7 @@
 <?php
   include_once 'view/View.php';
 
-  class index_View extends View
+  class navigationBarView extends View
   {
 
     public function mostrarIndex()
