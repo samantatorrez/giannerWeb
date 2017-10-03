@@ -1,5 +1,3 @@
-{include file="head.tpl"}
-<div id="contenido">
   <div class="container-fluid">
     <div class="row productos">
       <div class="col-sm-12 col-md-4">
@@ -60,7 +58,6 @@
               <li>Interior en shantung negro bordado.</li>
               <li>Medidas: 21 x 12 cm.</li>
             </ul>
-          </div>
           </div>
         </div>
       </div>
@@ -137,5 +134,3 @@
     </div>
   </div>
   <script src="js/tableEdition.js"></script>
-</div>
-{include file="foot.tpl"}

@@ -1,35 +1,30 @@
-$( document ).ready(function() {
-    const IMAGEN_LOADER="<div class=\"text-center\"><img src=\"images\/loader.gif\"  alt=\"loader\"><\/div>";
-     function actualizarContenido(url){
-       $.ajax({
-         url: url,
-         type: "GET",
-         dataType : "HTML",
-         success : function(data, textStatus) {
-           $("#contenido").html(data);
-         }
-       })
-       $("#contenido").html(IMAGEN_LOADER);
-     };
+$(document).ready(function() {
+  "use strict";
 
-    $("li").click(function(event) {
-          event.preventDefault();
-          $("li").removeClass("active");
-          $(this).addClass("active");
-    });
+  function MostrarError(){
+    $("#contenido").html("SE CAYO LA RED.");
+  }
 
-    $("#home").on('click', function(event) {
-      event.preventDefault();
-      actualizarContenido("presentacion.html");
-    });
-    $("#contactos").on('click', function(event) {
-      event.preventDefault();
-      actualizarContenido("contactos.html");
-    });
-    $("#productos").on('click', function(event) {
-      event.preventDefault();
-      actualizarContenido("productos.html");
-    });
+  const IMAGEN_LOADER="<div class=\"text-center\"><img src=\"images\/loader.gif\"  alt=\"loader\"><\/div>";
+  function actualizarContenido(event){
+    var myId = $(this).attr("id"); //Toma el valor del id que esta en el nav
+    $("li").removeClass("active");
+    $(this).addClass("active");
+    $.ajax(
+      {
+        url: myId,
+        type: "GET",
+        dataType : "HTML",
+        success : function(data, textStatus) { // Si la solicitud tuvo exito, mostrará el contenido en la pagina
+          $("#contenido").html(data);
+        },
+        error: MostrarError //sino muestra el error
+      }
+    );
+    $("#contenido").html(IMAGEN_LOADER);
+    event.preventDefault();
+  };
 
-    actualizarContenido("presentacion.html");
+  $("li").on("click",actualizarContenido);
+
 });
