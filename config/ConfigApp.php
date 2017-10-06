@@ -6,7 +6,8 @@
       ''=> 'navigationBarController#mostrarIndex',
       'home'=> 'navigationBarController#mostrarHome',
       'productos' => 'navigationBarController#mostrarProductos',
-      'contactos' => 'navigationBarController#mostrarContactos'
+      'contactos' => 'navigationBarController#mostrarContactos',
+      'admin' => 'AdminController#mostrarAdmin'
     ];
   }
  ?>
