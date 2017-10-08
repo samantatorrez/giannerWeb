@@ -7,6 +7,8 @@
       'home'=> 'NavigationBarController#mostrarHome',
       'producto' => 'NavigationBarController#mostrarProductos',
       'contacto' => 'NavigationBarController#mostrarContactos',
+      
+      'admin' => 'AdminController#mostrarAdmin',
 
       'login' => 'LoginController#mostrarFormulario',
       'verificarUsuario' => 'LoginController#verify',
