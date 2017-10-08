@@ -3,7 +3,7 @@
   define('PARAMS', 1);
 
   include_once 'config/ConfigApp.php';
-  include_once 'model/Model.php';
+  //include_once 'model/Model.php';
   include_once 'view/View.php';
   include_once 'controller/Controller.php';
   include_once 'controller/NavigationBarController.php';
