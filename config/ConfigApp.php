@@ -3,10 +3,14 @@
     public static $ACTION = "action";
     public static $PARAMS = "params";
     public static $ACTIONS = [
-      ''=> 'navigationBarController#mostrarIndex',
-      'home'=> 'navigationBarController#mostrarHome',
-      'productos' => 'navigationBarController#mostrarProductos',
-      'contactos' => 'navigationBarController#mostrarContactos'
+      ''=> 'NavigationBarController#mostrarIndex',
+      'home'=> 'NavigationBarController#mostrarHome',
+      'producto' => 'NavigationBarController#mostrarProductos',
+      'contacto' => 'NavigationBarController#mostrarContactos',
+
+      'login' => 'LoginController#mostrarFormulario',
+      'verificarUsuario' => 'LoginController#verify',
+      'logout' => 'LoginController#destroy'
     ];
   }
  ?>

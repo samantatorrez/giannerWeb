@@ -2,8 +2,9 @@
     <div class="container-fluid">
       <ul class="nav navbar-nav">
         <li id="home" class="active"><a href="#">Home</a></li>
-        <li id="productos"><a href="#">Productos</a></li>
-        <li id="contactos"><a href="#">Contacto</a></li>
+        <li id="producto"><a href="#">Productos</a></li>
+        <li id="contacto"><a href="#">Contacto</a></li>
+        <li id="login"><a href="#">Iniciar Sesion</a></li>
       </ul>
     </div>
   </nav>
