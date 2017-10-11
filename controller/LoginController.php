@@ -27,7 +27,8 @@
             session_start();
             $_SESSION['usuario'] = $userName;
             $_SESSION['LAST_ACTIVITY'] = time();
-            header('Location: '.HOME);
+            var_dump(  $_SESSION['usuario']);
+            header('Location: '.ADMIN);
           }
           else{
             $this->view->mostrarFormulario('Usted no tiene permiso para ingresar a modo administrador.');

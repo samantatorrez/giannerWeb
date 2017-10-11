@@ -15,7 +15,7 @@ $(document).ready(function (){
 			  $.ajax({
 					type: "POST",
 					datatype: "JSON",
-					url: "route.php?action=admin",
+					url: "route.php?action=verificarUsuario",
 					data: data,
 					success: function (data) {
 			      $("#contenido").html(data);
