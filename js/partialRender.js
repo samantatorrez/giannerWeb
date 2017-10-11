@@ -12,7 +12,7 @@ $(document).ready(function() {
     $(this).addClass("active");
     $.ajax(
       {
-        url: myId,
+        url: 'route.php?action=' + myId,
         type: "GET",
         dataType : "HTML",
         success : function(data, textStatus) { // Si la solicitud tuvo exito, mostrará el contenido en la pagina
