@@ -27,7 +27,6 @@
         while ($i < count($queries) && strlen($this->db->errorInfo()[2])==0)
         {
           $this->db->exec($queries[$i]);
-          echo $queries[$i];
           $i++;
         }
       } catch (PDOException $e) {
@@ -36,7 +35,7 @@
         error_log( $e->getMessage());
       }
     }
-    
+
     public function loadSQLSchema($dbFile)
     {
       # esto es temporal hasta que expliquen lo de archivos
