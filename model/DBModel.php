@@ -3,7 +3,7 @@ include_once 'exceptions/ListExceptions.php';
 
   class DBModel
   {
-    
+
     protected $db;
 
     function __construct()
@@ -36,7 +36,7 @@ include_once 'exceptions/ListExceptions.php';
       error_log( $e->getMessage());
 
     }
-
+  }
     public function loadSQLSchema($dbFile)
     {
       # esto es temporal hasta que expliquen lo de archivos

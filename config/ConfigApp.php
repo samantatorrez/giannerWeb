@@ -7,7 +7,7 @@
       'home'=> 'NavigationBarController#mostrarHome',
       'producto' => 'NavigationBarController#mostrarProductos',
       'contacto' => 'NavigationBarController#mostrarContactos',
-      
+
       'admin' => 'AdminController#mostrarAdmin',
       'agregarProducto' => 'AdminController#agregarProducto',
       'borrarProducto' => 'AdminController#borrarProducto',
@@ -17,7 +17,7 @@
       'agregarCategoria' => 'AdminController#agregarCategoria',
       'editarCategoria' => 'AdminController#editarCategoria',
       'borrarCategoria' => 'AdminController#borrarCategoria',
-      'obtenerFormularioEditarCategoria' => 'AdminController#obtenerFormularioEditarCategoria'
+      'obtenerFormularioEditarCategoria' => 'AdminController#obtenerFormularioEditarCategoria',
 
       'login' => 'LoginController#mostrarLogin',
       'verificarUsuario' => 'LoginController#verificar',

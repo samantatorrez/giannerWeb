@@ -1,5 +1,5 @@
 <?php
-
+  include_once 'exceptions/ListExceptions.php';
   class SecuredController extends Controller
   {
 
@@ -10,6 +10,11 @@
         header('Location: '.LOGIN);
         die();
       }
+    }
+
+    protected function errorHandler($error)
+    {
+      $this->view->mostrarError($error);
     }
 
   }
