@@ -1,0 +1,19 @@
+section{
+  padding-bottom: 30px;
+}
+
+#btnlogin, #btnlogout{
+  background: #e30e1e;
+  color: #ffffff;
+}
+
+#btnlogin:hover{
+  background-color: #ddd;
+  color: #e30e1e;
+}
+
+#btnlogout > a{
+  background: #e30e1e;
+  color: #ffffff;
+  text-decoration: none;
+}

@@ -1,15 +1,12 @@
 <?php
-/**
- *
- */
- include_once 'DBModel.php';
-class CategoryModel extends DBModel
-{
+  include_once 'DBModel.php';
 
-  function __construct()
+  class CategoryModel extends DBModel
   {
-    parent::__construct();
-  }
+    function __construct()
+    {
+      parent::__construct();
+    }
   #CATEGORIA
   function obtenerCategorias()
   {
@@ -58,5 +55,5 @@ class CategoryModel extends DBModel
     }
     return $categoria;
   }
-}
- ?>
+
+?>

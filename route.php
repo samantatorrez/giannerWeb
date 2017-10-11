@@ -3,11 +3,13 @@
   define('PARAMS', 1);
 
   include_once 'config/ConfigApp.php';
-  //include_once 'model/Model.php';
+  include_once 'model/DBModel.php';
   include_once 'view/View.php';
   include_once 'controller/Controller.php';
-  include_once 'controller/navigationBarController.php';
+  include_once 'controller/NavigationBarController.php';
   include_once 'controller/AdminController.php';
+  include_once 'controller/LoginController.php';
+  include_once 'controller/SecuredController.php';
 
   function parseURL($url)
   {

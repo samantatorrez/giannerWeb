@@ -1,16 +1,8 @@
 <?php
-include_once 'view/View.php';
-/**
- *
- */
-class AdminView extends View
-{
-  public function mostrarAdmin($productos, $categorias)
+  include_once 'view/View.php';
+
+  class AdminView extends View
   {
-    $this->smarty->assign('productos', $productos);
-    $this->smarty->assign('categorias', $categorias);
-    $this->smarty->display('admin.tpl');
-  }
   public function mostrarFormularioAgregarProducto($categorias){
     $productFormAction="Agregar Producto";
     $isOnEdition=false;
@@ -47,6 +39,14 @@ class AdminView extends View
     $this->smarty->assign('categoria', $categoria);
     $this->smarty->display('categoryRow.tpl');
   }
-}
+    
+    public function mostrarAdmin($productos, $categorias)
+    {
+      $this->smarty->assign('productos', $productos);
+      $this->smarty->assign('categorias', $categorias);
+      $this->smarty->display('admin.tpl');
+    }
 
- ?>
+  }
+
+?>

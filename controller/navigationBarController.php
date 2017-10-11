@@ -1,13 +1,12 @@
 <?php
-  include_once 'controller/controller.php';
-  include_once 'view/navigationBarView.php';
+  include_once 'view/NavigationBarView.php';
 
-  class navigationBarController extends Controller
+  class NavigationBarController extends Controller
   {
 
     function __construct()
     {
-      $this->view = new navigationBarView();
+      $this->view = new NavigationBarView();
     }
 
     public function mostrarIndex()
@@ -23,6 +22,7 @@
     public function mostrarProductos()
     {
       $this->view->mostrarProductos();
+
     }
 
     public function mostrarContactos()

@@ -1,12 +1,13 @@
-
 .noPadding {
 padding: 0 ;
 }
+
 .imagenNav{
   height: 100px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
 .btn-dark{
   background-color: black;
   color:white;
@@ -18,19 +19,24 @@ padding: 0 ;
 .btn-dark:focus{
   color: white;
 }
+
 body {
   margin:0;
 }
+
 html{
   background-color: black;
 }
+
 .footer{
   background-color: black;
   color:white;
 }
+
 .navbar.navbar-inverse.navbar-static-top {
   margin-bottom: 0px;
 }
+
 .navbar-inverse .navbar-nav > .active > a{
   background-color: #e30e1e;
   color: white;
@@ -40,28 +46,35 @@ html{
   background-color: #ddd;
   color: black;
 }
+
 .imagenPortada {
   width: 100%;
 }
+
 .logoReducido {
   width: 60px;
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
 .iconosMedia img{
   width: 64px;
 }
+
 ul {
     list-style-image: url('../images/icon.jpg');
     margin-left: 25%;
 }
+
 .presentacionLinea, .precios, .formularioContacto {
   padding-bottom: 5%;
 }
+
 .precios{
-  background-color: Silver;
-  color: white;
+  background-color: #e8eeea;
+  /*color: white;*/
 }
+
 .billeteraLolita {
   height: 100%;
 }
