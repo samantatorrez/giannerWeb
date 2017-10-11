@@ -10,6 +10,12 @@
     {
       $this->smarty = new Smarty();
     }
+
+    function mostrarError($errorMsg)
+    {
+      $this->smarty->assign('errorMsg', $errorMsg);
+      $this->smarty->display('error.tpl');
+    }
   }
 
 

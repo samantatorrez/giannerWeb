@@ -1,7 +1,7 @@
 <?php
-/**
- *
- */
+include_once 'exceptions/ListExceptions.php';
+
+
 class DBModel
 {
   protected $db;
@@ -13,6 +13,7 @@ class DBModel
       'dbname=gianner_web_db;charset=utf8', 'root', '');
     } catch (PDOException $e){
       $this->buildDDBfromFile('gianner_web_db','db/gianner_web_db.sql');
+      error_log( $e->getMessage());
     }
   }
 
@@ -22,9 +23,7 @@ class DBModel
       $this->db = new PDO('mysql:host=localhost', "root", "");
       $this->db->exec('CREATE DATABASE IF NOT EXISTS '.$dbName);
       $this->db->exec('USE '.$dbName);
-      echo "antes";
       $queries = $this->loadSQLSchema($dbFile);
-      echo "aqui";
       $i=0;
       while ($i < count($queries) && strlen($this->db->errorInfo()[2])==0)
       {
@@ -33,7 +32,9 @@ class DBModel
         $i++;
       }
     } catch (PDOException $e) {
-      echo $e;
+      throw new DataBaseException("Error creando nueva base desde archivo o problema de conexión con la base.");
+    } catch (Exception $e){
+      error_log( $e->getMessage());
     }
   }
   public function loadSQLSchema($dbFile)

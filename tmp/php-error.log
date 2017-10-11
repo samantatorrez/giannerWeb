@@ -1,0 +1,19 @@
+[10-Oct-2017 06:21:52 Europe/Berlin] Error creando nueva base desde archivo o problema de conexión con la base.
+[11-Oct-2017 02:04:41 Europe/Berlin] Parametro obligatorio: nombre
+[11-Oct-2017 02:19:05 Europe/Berlin] Parametro obligatorio: nombre
+[11-Oct-2017 02:19:38 Europe/Berlin] Parametro obligatorio: nombre
+[11-Oct-2017 02:20:58 Europe/Berlin] Parametro obligatorio: nombre
+[11-Oct-2017 02:21:25 Europe/Berlin] Parametro obligatorio: nombre
+[11-Oct-2017 02:22:47 Europe/Berlin] Parametro obligatorio: nombre
+[11-Oct-2017 02:25:21 Europe/Berlin] Parametro obligatorio: nombre
+[11-Oct-2017 02:35:17 Europe/Berlin] Parametro obligatorio: nombre
+[11-Oct-2017 02:36:54 Europe/Berlin] Parametro obligatorio: nombre
+[11-Oct-2017 02:37:49 Europe/Berlin] Parametro obligatorio: nombre
+[11-Oct-2017 02:38:12 Europe/Berlin] Parametro obligatorio: nombre
+[11-Oct-2017 02:39:07 Europe/Berlin] Parametro obligatorio: nombre
+[11-Oct-2017 02:40:33 Europe/Berlin] Parametro obligatorio: nombre
+[11-Oct-2017 03:18:31 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 66
+[11-Oct-2017 03:18:45 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 66
+[11-Oct-2017 03:19:06 Europe/Berlin] Parametro obligatorio: nombre
+[11-Oct-2017 04:48:08 Europe/Berlin] PHP Notice:  Undefined variable: e in C:\xampp\htdocs\giannerWeb\controller\Controller.php on line 12
+[11-Oct-2017 04:48:08 Europe/Berlin] PHP Fatal error:  Call to a member function getMessage() on null in C:\xampp\htdocs\giannerWeb\controller\Controller.php on line 12

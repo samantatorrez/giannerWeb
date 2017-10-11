@@ -24,14 +24,18 @@ class CategoryModel extends DBModel
     .' VALUES(:nombre)';
     $sentencia = $this->db->prepare($sql);
     $sentencia->execute(array(":nombre"=>$nombre));
-    return $this->db->lastInsertId();
+    $categoria = array('id' => $this->db->lastInsertId(),
+                  'nombre' => $nombre);
+    return $categoria;
   }
   function borrarCategoria($id)
   {
     $sql = 'DELETE FROM categoria WHERE id=?';
     $sentencia = $this->db->prepare($sql);
     $sentencia->execute(array($id));
-    return $sentencia->rowCount();
+    if($sentencia->rowCount()!=1){
+      throw new DataBaseException("Error no coincide cantidad de filas modificadas");
+    }
   }
   function editarCategoria($id,$nombre)
   {

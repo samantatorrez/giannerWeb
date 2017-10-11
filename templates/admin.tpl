@@ -18,36 +18,20 @@
         </thead>
         <tbody>
           {foreach from=$productos item=product}
-          <tr><td>{$product['id']}</td>
-            <td>{$product['nombre']}</td>
-            <td>{$product['medidas']}</td>
-            <td>{$product['precio']}</td>
-            <td>{$product['id_categoria']}</td>
-            <td>{$product['descripcion']}</td>
-            <td><button data-id= {$product['id']} type="button" class="btn btn-danger">Borrar</button></td>
-          </tr>
+          {include 'productRow.tpl'}
           {/foreach}
         </tbody>
       </table>
+      <button id="agregarProducto" type="button" class="btn btn-dark btn-lg btn-block">Agregar Producto</button>
+      <div id="mensajeFormulario">
+      </div>
+      <div class="col-sm-12 col-md-12 form-group">
+        <form id="formularioProducto" action="agregarProducto" method="post" >
+        </form>
+      </div>
     </div>
-    <div class="col-sm-12 col-md-12">
-      <form id="nuevoProducto">
-        <h2 class="text-center"> Agregar producto</h2>
-        <div class="form-group">
-          <label>Nombre:</label>
-          <input type="text" name="nombre" class="form-control">
-        </div>
-        <div class="form-group">
-          <label>Medida:</label>
-          <input type="text" name="medida" class="form-control">
-        </div>
-        <div class="form-group">
-          <label>Precio:</label>
-          <input type="text" name="precio" class="form-control">
-        </div>
-      </form>
-    </div>
-    <div class="col-sm-12 col-md-12">
+    <hr>
+    <div class="categorias col-sm-12 col-md-12">
       <h2>🌺Categorias🌺</h2>
       <table id="tablaCategorias" class="table">
         <thead>
@@ -66,7 +50,16 @@
         </tbody>
       </table>
     </div>
+    <div class="col-sm-12 col-md-12 form-group">
+      <form id="nuevaCategoria" action="agregarCategoria" method="post">
+        <h2> Agregar categoria</h2>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-default">Agregar producto</button>
+      </form>
     </div>
-
+    </div>
 </div>
 <script src="js/tableEdition.js"></script>
