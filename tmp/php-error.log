@@ -17,3 +17,8 @@
 [11-Oct-2017 03:19:06 Europe/Berlin] Parametro obligatorio: nombre
 [11-Oct-2017 04:48:08 Europe/Berlin] PHP Notice:  Undefined variable: e in C:\xampp\htdocs\giannerWeb\controller\Controller.php on line 12
 [11-Oct-2017 04:48:08 Europe/Berlin] PHP Fatal error:  Call to a member function getMessage() on null in C:\xampp\htdocs\giannerWeb\controller\Controller.php on line 12
+[11-Oct-2017 13:12:33 Europe/Berlin] PHP Fatal error:  Call to undefined method ProductModel::borrarCategoria() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 132
+[11-Oct-2017 13:12:54 Europe/Berlin] PHP Fatal error:  Call to undefined method ProductModel::borrarCategoria() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 132
+[11-Oct-2017 13:13:22 Europe/Berlin] PHP Fatal error:  Call to undefined method ProductModel::borrarCategoria() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 132
+[11-Oct-2017 13:47:16 Europe/Berlin] PHP Notice:  Undefined variable: categoria in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 171
+[11-Oct-2017 13:49:04 Europe/Berlin] PHP Fatal error:  Call to undefined method AdminController::editarCategoria() in C:\xampp\htdocs\giannerWeb\route.php on line 36

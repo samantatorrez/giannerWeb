@@ -51,8 +51,8 @@ class ProductModel extends DBModel
     $sql = 'DELETE FROM producto WHERE id= :id';
     $sentencia = $this->db->prepare($sql);
     $sentencia->execute(array('id' => $id));
-    if($sentencia->rowCount()!=1){
-      throw new DataBaseException("Error no coincide cantidad de filas modificadas");
+    if($sentencia->rowCount()==0){
+      throw new DataBaseException("No es posible borrar este producto.");
     }
   }
   function editarProducto($id,$nombre,$descripcion,$medidas,$precio,$id_categoria)
@@ -74,8 +74,8 @@ class ProductModel extends DBModel
                   'precio' => $precio,
                   'id_categoria' => $id_categoria );
 
-  if($sentencia->rowCount()!=1){
-    throw new DataBaseException("Error no coincide cantidad de filas modificadas");
+  if($sentencia->rowCount()==0){
+    throw new DataBaseException("Error no es posible editar este producto.");
   }
   return $producto;
   }

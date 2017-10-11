@@ -30,10 +30,22 @@ class AdminView extends View
     $this->smarty->display('productForm.tpl');
   }
 
+  function mostrarFormularioEditarCategoria($categoria)
+  {
+    $this->smarty->assign('categoria',$categoria);
+    $this->smarty->display('categoryForm.tpl');
+  }
+
   public function obtenerFilaProducto($product)
   {
     $this->smarty->assign('product', $product);
     $this->smarty->display('productRow.tpl');
+  }
+
+  public function obtenerFilaCategoria($categoria)
+  {
+    $this->smarty->assign('categoria', $categoria);
+    $this->smarty->display('categoryRow.tpl');
   }
 }
 

@@ -18,6 +18,15 @@ class CategoryModel extends DBModel
     $sentencia->execute();
     return $sentencia->fetchAll(PDO::FETCH_ASSOC);
   }
+
+  function obtenerCategoria($id)
+  {
+    $sql= 'SELECT * FROM categoria WHERE id=?';
+    $sentencia = $this->db->prepare($sql);
+    $sentencia->execute(array($id));
+    return $sentencia->fetch();
+  }
+
   function agregarCategoria($nombre)
   {
     $sql= 'INSERT INTO categoria(nombre)'
@@ -33,16 +42,21 @@ class CategoryModel extends DBModel
     $sql = 'DELETE FROM categoria WHERE id=?';
     $sentencia = $this->db->prepare($sql);
     $sentencia->execute(array($id));
-    if($sentencia->rowCount()!=1){
-      throw new DataBaseException("Error no coincide cantidad de filas modificadas");
+    if($sentencia->rowCount()==0){
+      throw new DataBaseException("Error no es posible borrar esta categoria.");
     }
   }
   function editarCategoria($id,$nombre)
   {
-    $sql = 'UPDATE tarea SET nombre=:nombre WHERE id=:id';
+    $sql = 'UPDATE categoria SET nombre=:nombre WHERE id=:id';
     $sentencia = $this->db->prepare($sql);
     $sentencia->execute(array(":nombre"=>$nombre, ":id"=>$id));
-    return $sentencia->rowCount();
+    $categoria = array('id' => $id,
+                  'nombre' => $nombre);
+    if($sentencia->rowCount()==0){
+      throw new DataBaseException("Error no es posible editar esta categoria.");
+    }
+    return $categoria;
   }
 }
  ?>

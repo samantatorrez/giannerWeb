@@ -112,6 +112,32 @@ class AdminController extends Controller
     }
   }
 
+  public function editarCategoria()
+  {
+    try {
+      if(!isset($_POST['id']) || empty($_POST['id'])){
+        throw new ParameterRequiredException("Parametro obligatorio: id");
+      }
+      if(!isset($_POST['nombre']) || empty($_POST['nombre'])){
+        throw new ParameterRequiredException("Parametro obligatorio: nombre");
+      }
+
+      $id= $_POST['id'];
+      $nombre = $_POST['nombre'];
+
+      $categoria = $this->categoryModel
+                  ->editarCategoria($id,$nombre);
+      $this->view->obtenerFilaCategoria($categoria);
+    } catch (ParameterRequiredException $e){
+      $this->errorHandler($e->getMessage());
+    } catch (DataBaseException $e){
+      $this->errorHandler($e->getMessage());
+    } catch (Exception $e) {
+      $this->errorHandler("Error al editar categoria.");
+      error_log( $e->getMessage());
+    }
+  }
+
   public function borrarProducto($params)
   {
     try {
@@ -121,6 +147,19 @@ class AdminController extends Controller
       $this->errorHandler($e->getMessage());
     } catch (Exception $e) {
       $this->errorHandler("Error al borrar producto.");
+      error_log( $e->getMessage());
+    }
+  }
+
+  public function borrarCategoria($params)
+  {
+    try {
+      $id=$params[0];
+      $this->categoryModel->borrarCategoria($id);
+    } catch (DataBaseException $e){
+      $this->errorHandler($e->getMessage());
+    } catch (Exception $e) {
+      $this->errorHandler("Error al borrar Categoria.");
       error_log( $e->getMessage());
     }
   }
@@ -146,6 +185,18 @@ class AdminController extends Controller
       $this->view->mostrarFormularioEditarProducto($categorias,$producto);
     } catch (Exception $e) {
       $this->errorHandler("Error al obtener formulario - producto.");
+      error_log( $e->getMessage());
+    }
+  }
+
+  public function obtenerFormularioEditarCategoria($params)
+  {
+    try {
+      $id=$params[0];
+      $categoria= $this->categoryModel->obtenerCategoria($id);
+      $this->view->mostrarFormularioEditarCategoria($categoria);
+    } catch (Exception $e) {
+      $this->errorHandler("Error al obtener formulario - categoria.");
       error_log( $e->getMessage());
     }
   }

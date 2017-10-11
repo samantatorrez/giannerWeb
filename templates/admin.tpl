@@ -23,7 +23,7 @@
         </tbody>
       </table>
       <button id="agregarProducto" type="button" class="btn btn-dark btn-lg btn-block">Agregar Producto</button>
-      <div id="mensajeFormulario">
+      <div id="mensajeProductos">
       </div>
       <div class="col-sm-12 col-md-12 form-group">
         <form id="formularioProducto" action="agregarProducto" method="post" >
@@ -45,19 +45,26 @@
           <tr><td>{$categoria['id']}</td>
             <td>{$categoria['nombre']}</td>
             <td><button data-id= {$categoria['id']} type="button" class="btn btn-danger">Borrar</button></td>
+            <td><button data-id= {$categoria['id']} type="button" class="btn btn-default">Editar</button></td>
           </tr>
           {/foreach}
         </tbody>
       </table>
     </div>
     <div class="col-sm-12 col-md-12 form-group">
-      <form id="nuevaCategoria" action="agregarCategoria" method="post">
-        <h2> Agregar categoria</h2>
+      <div id="mensajeCategorias">
+      </div>
+      <form id="formularioCategoria" action="agregarCategoria" method="post">
+        <div class="form-group">
+          <label for="nombre">Id:</label>
+          <input type="text" name="id" class="form-control" readonly>
+        </div>
         <div class="form-group">
           <label for="nombre">Nombre:</label>
           <input type="text" name="nombre" class="form-control">
         </div>
-        <button type="submit" class="btn btn-default">Agregar producto</button>
+        <button type="submit" class="btn btn-default">Subir</button>
+        <button type="button" class="btn cancelar btn-default">Cancelar</button>
       </form>
     </div>
     </div>
