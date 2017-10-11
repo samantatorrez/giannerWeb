@@ -41,6 +41,21 @@
       $this->smarty->display('categoryRow.tpl');
     }
 
+    public function mostrarHome($productos)
+    {
+      print_r($productos);
+      die();
+      $this->smarty->assign('productos', $productos);
+      $this->smarty->display('home.tpl');
+    }
+
+    public function mostrarProductos($productos, $categorias)
+    {
+      $this->smarty->assign('productos', $productos);
+      $this->smarty->assign('categorias', $categorias);
+      $this->smarty->display('productos.tpl');
+    }
+
     public function mostrarAdmin($productos, $categorias)
     {
       $this->smarty->assign('productos', $productos);

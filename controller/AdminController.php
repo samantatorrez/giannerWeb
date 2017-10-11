@@ -6,8 +6,8 @@
 
  class AdminController extends SecuredController
 {
-   private $productModel;
-   private $categoryModel;
+  private $productModel;
+  private $categoryModel;
 
   function __construct()
   {

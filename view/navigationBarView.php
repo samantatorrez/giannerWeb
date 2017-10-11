@@ -4,18 +4,22 @@
   class NavigationBarView extends View
   {
 
-    public function mostrarIndex()
+    public function mostrarIndex($productosCategorias)
     {
+      $this->smarty->assign('productosCategorias', $productosCategorias);
       $this->smarty->display('index.tpl');
     }
 
-    public function mostrarHome()
+    public function mostrarHome($productosCategorias)
     {
+      $this->smarty->assign('productosCategorias', $productosCategorias);
       $this->smarty->display('home.tpl');
     }
 
-    public function mostrarProductos()
+    public function mostrarProductos($productos,$categorias)
     {
+      $this->smarty->assign('productos', $productos);
+      $this->smarty->assign('categorias', $categorias);
       $this->smarty->display('productos.tpl');
     }
 

@@ -27,7 +27,6 @@
             session_start();
             $_SESSION['usuario'] = $userName;
             $_SESSION['LAST_ACTIVITY'] = time();
-            var_dump(  $_SESSION['usuario']);
             header('Location: '.ADMIN);
           }
           else{

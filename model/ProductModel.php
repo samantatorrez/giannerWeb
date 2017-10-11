@@ -44,7 +44,7 @@
                     'id_categoria' => $id_categoria );
       return $producto;
     }
-    
+
     function borrarProducto($id)
     {
       $sql = 'DELETE FROM producto WHERE id= :id';
@@ -82,7 +82,7 @@
 
     function obtenerProductosConNombreCategoria()
     {
-      $sql  = 'SELECT producto.*, categoria.nombre as nombre_categoria FROM producto, categoria WHERE producto.id_categoria = categoria.id ';
+      $sql  = 'SELECT producto.*, categoria.nombre AS nombre_categoria FROM producto, categoria WHERE producto.id_categoria = categoria.id ';
       $sentencia = $this->db->prepare($sql);
       $sentencia->execute();
       return $sentencia->fetchAll(PDO::FETCH_ASSOC);

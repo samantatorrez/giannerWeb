@@ -2,7 +2,7 @@
   <!-- {if isset($usuario)}
     <h5><strong>Hola!{$usuario['username']}</strong></h5>
   {/if} -->
-  <button type="submit" class="btn btn-danger" id="btnlogout"><a href="logout">Cerrar Sesion</a></button>
+  <button type="submit" class="btn btn-default" id="btnlogout">Cerrar Sesion</button>
 </div>
 <div class="container-fluid precios">
   <div class="blackFriday">
@@ -57,7 +57,7 @@
         </tbody>
       </table>
     </div>
-    
+
     <div class="col-sm-12 col-md-12 form-group">
       <div id="mensajeCategorias">
       </div>

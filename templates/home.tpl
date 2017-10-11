@@ -9,9 +9,9 @@
           <p class="text-center">Línea de accesorios primavera-verano ¨La Catrina¨, inspirada en el festejo del día de los muertos mexicano.</p>
           <h3 class="text-center">Productos de la línea</h3>
           <ul>
-            <li>Mochila Katrina (black-beige)</li>
-            <li>Morral Carmen</li>
-            <li>Billetera Lolita</li>
+            {foreach from=$productosCategorias item=prodcat}
+              <li>{$prodcat['nombre']} ({$prodcat['nombre_categoria']})</li>
+            {/foreach}
           </ul>
         </div>
       </div>

@@ -5,7 +5,6 @@
         <li id="producto"><a href="#">Productos</a></li>
         <li id="contacto"><a href="#">Contacto</a></li>
         <li id="admin"><a href="#">Administrador</a></li>
-        <!-- <li id="login"><a href="#">Administrador</a></li> -->
       </ul>
     </div>
   </nav>
