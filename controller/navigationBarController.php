@@ -1,5 +1,4 @@
 <?php
-  include_once 'controller/controller.php';
   include_once 'view/NavigationBarView.php';
 
   class NavigationBarController extends Controller

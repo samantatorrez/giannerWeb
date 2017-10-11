@@ -1,11 +1,11 @@
 <section>
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
-      <form action="verificarUsuario" method="post">
+      <form action="verificarUsuario" method="POST">
         <h2 class="form-signin-heading text-center">Iniciar Sesion</h2>
         <div class="form-group">
           <label for="usuario">Usuario</label>
-          <input type="text" class="form-control" id="usuario" name="usuario" placeholder="roberto.petrusa" required>
+          <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Nombre de usuario" required autofocus>
         </div>
         <div class="form-group">
           <label for="password">Contraseña</label>

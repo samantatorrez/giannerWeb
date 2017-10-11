@@ -1,3 +1,9 @@
+<div class="pull-right">
+  <!-- {if isset($usuario)}
+    <h5><strong>Hola!{$usuario['username']}</strong></h5>
+  {/if} -->
+  <button type="submit" class="btn btn-danger" id="btnlogout"><a href="logout">Cerrar Sesion</a></button>
+</div>
 <div class="container-fluid precios">
   <div class="blackFriday">
     <h1> Modo Administrador 💀🌺💀🌺</h1>

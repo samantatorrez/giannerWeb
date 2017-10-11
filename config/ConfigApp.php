@@ -7,12 +7,12 @@
       'home'=> 'NavigationBarController#mostrarHome',
       'producto' => 'NavigationBarController#mostrarProductos',
       'contacto' => 'NavigationBarController#mostrarContactos',
-      
+
       'admin' => 'AdminController#mostrarAdmin',
 
-      'login' => 'LoginController#mostrarFormulario',
-      'verificarUsuario' => 'LoginController#verify',
-      'logout' => 'LoginController#destroy'
+      'login' => 'LoginController#mostrarLogin',
+      'verificarUsuario' => 'LoginController#verificar',
+      'logout' => 'LoginController#cerrar'
     ];
   }
  ?>
