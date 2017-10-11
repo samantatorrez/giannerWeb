@@ -1,20 +1,21 @@
 <?php
 include_once 'exceptions/ListExceptions.php';
 
-  class DBModel
+
+class DBModel
+{
+  protected $db;
+
+  function __construct()
   {
-
-    protected $db;
-
-    function __construct()
-    {
-      try{
-        $this->db = new PDO('mysql:host=localhost;'.
-        'dbname=gianner_web_db;charset=utf8', 'root', '');
-      } catch (PDOException $e){
-        $this->buildDDBfromFile('gianner_web_db','db/gianner_web_db.sql');
-      }
+    try{
+      $this->db = new PDO('mysql:host=localhost;'.
+      'dbname=gianner_web_db;charset=utf8', 'root', '');
+    } catch (PDOException $e){
+      $this->buildDDBfromFile('gianner_web_db','db/gianner_web_db.sql');
+      error_log( $e->getMessage());
     }
+  }
 
   public function buildDDBfromFile($dbName, $dbFile)
   {
@@ -34,17 +35,14 @@ include_once 'exceptions/ListExceptions.php';
       throw new DataBaseException("Error creando nueva base desde archivo o problema de conexión con la base.");
     } catch (Exception $e){
       error_log( $e->getMessage());
-
     }
   }
-    public function loadSQLSchema($dbFile)
-    {
-      # esto es temporal hasta que expliquen lo de archivos
-      $myfile = file_get_contents($dbFile);
-      $queries = explode(";", $myfile);
-      return $queries;
-    }
-
+  public function loadSQLSchema($dbFile)
+  {
+    # esto es temporal hasta que expliquen lo de archivos
+    $myfile = file_get_contents($dbFile);
+    $queries = explode(";", $myfile);
+    return $queries;
   }
-
-?>
+}
+ ?>

@@ -29,7 +29,6 @@
     {
       $this->view->mostrarContactos();
     }
-
   }
 
 ?>
