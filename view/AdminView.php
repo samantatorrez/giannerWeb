@@ -3,43 +3,44 @@
 
   class AdminView extends View
   {
-  public function mostrarFormularioAgregarProducto($categorias){
-    $productFormAction="Agregar Producto";
-    $isOnEdition=false;
-    $this->smarty->assign('productFormAction', $productFormAction);
-    $this->smarty->assign('categorias', $categorias);
-    $this->smarty->assign('isOnEdition', $isOnEdition);
-    $this->smarty->display('productForm.tpl');
-  }
 
-  public function mostrarFormularioEditarProducto($categorias,$producto){
-    $productFormAction="Editar Producto";
-    $isOnEdition=true;
-    $this->smarty->assign('productFormAction', $productFormAction);
-    $this->smarty->assign('categorias', $categorias);
-    $this->smarty->assign('isOnEdition', $isOnEdition);
-    $this->smarty->assign('product',$producto);
-    $this->smarty->display('productForm.tpl');
-  }
+    public function mostrarFormularioAgregarProducto($categorias){
+      $productFormAction="Agregar Producto";
+      $isOnEdition=false;
+      $this->smarty->assign('productFormAction', $productFormAction);
+      $this->smarty->assign('categorias', $categorias);
+      $this->smarty->assign('isOnEdition', $isOnEdition);
+      $this->smarty->display('productForm.tpl');
+    }
 
-  function mostrarFormularioEditarCategoria($categoria)
-  {
-    $this->smarty->assign('categoria',$categoria);
-    $this->smarty->display('categoryForm.tpl');
-  }
+    public function mostrarFormularioEditarProducto($categorias,$producto){
+      $productFormAction="Editar Producto";
+      $isOnEdition=true;
+      $this->smarty->assign('productFormAction', $productFormAction);
+      $this->smarty->assign('categorias', $categorias);
+      $this->smarty->assign('isOnEdition', $isOnEdition);
+      $this->smarty->assign('product',$producto);
+      $this->smarty->display('productForm.tpl');
+    }
 
-  public function obtenerFilaProducto($product)
-  {
-    $this->smarty->assign('product', $product);
-    $this->smarty->display('productRow.tpl');
-  }
+    function mostrarFormularioEditarCategoria($categoria)
+    {
+      $this->smarty->assign('categoria',$categoria);
+      $this->smarty->display('categoryForm.tpl');
+    }
 
-  public function obtenerFilaCategoria($categoria)
-  {
-    $this->smarty->assign('categoria', $categoria);
-    $this->smarty->display('categoryRow.tpl');
-  }
-    
+    public function obtenerFilaProducto($product)
+    {
+      $this->smarty->assign('product', $product);
+      $this->smarty->display('productRow.tpl');
+    }
+
+    public function obtenerFilaCategoria($categoria)
+    {
+      $this->smarty->assign('categoria', $categoria);
+      $this->smarty->display('categoryRow.tpl');
+    }
+
     public function mostrarAdmin($productos, $categorias)
     {
       $this->smarty->assign('productos', $productos);

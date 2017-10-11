@@ -1,5 +1,4 @@
 <?php
-
   include_once 'libs/smarty/Smarty.class.php';
 
   class View

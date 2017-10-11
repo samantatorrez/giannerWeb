@@ -11,6 +11,7 @@
 
   function __construct()
   {
+    parent::__construct();
     $this->view = new AdminView();
     try{
       $this->productModel= new ProductModel();

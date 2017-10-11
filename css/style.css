@@ -12,10 +12,12 @@ padding: 0 ;
   background-color: black;
   color:white;
 }
+
 .btn-dark:hover{
   background-color: #E30E1E;
   color: white;
 }
+
 .btn-dark:focus{
   color: white;
 }

@@ -23,23 +23,25 @@
   ini_set("error_log", "tmp/php-error.log");
 
   try{
-      if(isset($_GET['action'])){
-        $urlData = parseURL($_GET['action']);
-        $action = $urlData[ConfigApp::$ACTION]; //home
-        if(array_key_exists($action,ConfigApp::$ACTIONS)){
-          $params = $urlData[ConfigApp::$PARAMS];
-          $action = explode('#',ConfigApp::$ACTIONS[$action]); //toma lo que esta despues del #
-          $controller =  new $action[0]();
-          $metodo = $action[1];
-          if(isset($params) &&  $params != null){
-              echo $controller->$metodo($params);
-          }
-          else{
-              echo $controller->$metodo();
-          }
+    if(isset($_GET['action'])){
+      $urlData = parseURL($_GET['action']);
+      $action = $urlData[ConfigApp::$ACTION]; //home
+      if(array_key_exists($action,ConfigApp::$ACTIONS)){
+        $params = $urlData[ConfigApp::$PARAMS];
+        $action = explode('#',ConfigApp::$ACTIONS[$action]); //toma lo que esta despues del #
+        $controller =  new $action[0]();
+        $metodo = $action[1];
+        if(isset($params) &&  $params != null){
+          echo $controller->$metodo($params);
+        }
+        else{
+          echo $controller->$metodo();
         }
       }
-    }catch (Exception $e){
-      error_log( $e->getMessage());
     }
+  }
+  catch (Exception $e){
+      error_log( $e->getMessage());
+  }
+
 ?>
