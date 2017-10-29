@@ -1,5 +1,5 @@
 <?php
-  include_once 'DBModel.php';
+  require_once 'DBModel.php';
 
   class ProductModel extends DBModel
   {
@@ -78,6 +78,14 @@
       throw new DataBaseException("Error no es posible editar este producto.");
     }
     return $producto;
+    }
+
+    public function filtrarxCategoria($categoria)
+    {
+      $sql = 'SELECT * FROM producto WHERE id_categoria = (SELECT id FROM categoria WHERE nombre = ?)';
+      $sentencia = $this->db->prepare($sql);
+      $sentencia->execute(array($categoria));
+      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
     }
 
     function obtenerProductosConNombreCategoria()

@@ -1,8 +1,8 @@
 <?php
- include_once 'model/ProductModel.php';
- include_once 'model/CategoryModel.php';
- include_once 'view/AdminView.php';
- include_once 'controller/SecuredController.php';
+ require_once 'model/ProductModel.php';
+ require_once 'model/CategoryModel.php';
+ require_once 'view/AdminView.php';
+ require_once 'controller/SecuredController.php';
 
  class AdminController extends SecuredController
 {

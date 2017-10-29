@@ -1,5 +1,5 @@
 <?php
-  include_once 'exceptions/ListExceptions.php';
+  require_once 'exceptions/ListExceptions.php';
 
   class DBModel
   {

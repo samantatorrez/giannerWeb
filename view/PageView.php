@@ -1,7 +1,7 @@
 <?php
-  include_once 'view/View.php';
+  require_once 'view/View.php';
 
-  class NavigationBarView extends View
+  class PageView extends View
   {
 
     public function mostrarIndex($productosCategorias)
@@ -26,6 +26,12 @@
     public function mostrarContactos()
     {
       $this->smarty->display('contactos.tpl');
+    }
+
+    public function mostrarxCategoria($productos)
+    {
+      $this->smarty->assign('productos', $productos);
+      $this->smarty->display('productosTabla.tpl');
     }
 
   }
