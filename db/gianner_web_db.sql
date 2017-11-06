@@ -73,7 +73,7 @@ INSERT INTO `producto` (`id`, `nombre`, `descripcion`, `precio`, `medidas`, `id_
 
 CREATE TABLE `usuario` (
   `id` int(11) NOT NULL,
-  `username` varchar(100) NOT NULL,
+  `mail` varchar(200) NOT NULL,
   `password` varchar(255) NOT NULL,
   `role` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -82,9 +82,9 @@ CREATE TABLE `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`id`, `username`, `password`, `role`) VALUES
-(1, 'Fer', '$2y$10$XOE071dzGW5wrNcj4dH03eDYzE9KelHUd5SiQ8KZHH1uyc8vBOD9a', 0), 
-(2, 'Dara', '$2y$10$r4ctfD7c5DQ0r8ATbmaoD.H1buOSV197QGfOaVTokoDw9XunNrcqC', 1);
+INSERT INTO `usuario` (`id`, `mail`, `password`, `role`) VALUES
+(1, 'fer@gmail.com', '$2y$10$XOE071dzGW5wrNcj4dH03eDYzE9KelHUd5SiQ8KZHH1uyc8vBOD9a', 0),
+(2, 'dara@gmail.com', '$2y$10$r4ctfD7c5DQ0r8ATbmaoD.H1buOSV197QGfOaVTokoDw9XunNrcqC', 1);
 
 --
 -- Índices para tablas volcadas

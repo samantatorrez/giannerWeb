@@ -17,7 +17,7 @@
       $this->productModel= new ProductModel();
       $this->categoryModel= new CategoryModel();
     } catch (DataBaseException $e){
-      $this->errorHandler($e->getMessage());
+        $this->errorHandler($e->getMessage());
       throw $e;
     }
   }

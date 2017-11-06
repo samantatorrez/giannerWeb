@@ -11,7 +11,7 @@
     #CATEGORIA
     function obtenerCategorias()
     {
-      $sql  = 'SELECT * FROM `categoria` ORDER BY nombre';
+      $sql  = 'SELECT * FROM `categoria` ORDER BY nombre ASC';
       $sentencia = $this->db->prepare($sql);
       $sentencia->execute();
       return $sentencia->fetchAll(PDO::FETCH_ASSOC);

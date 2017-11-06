@@ -6,7 +6,7 @@
     function __construct()
     {
       session_start();
-      $timeout = 100; // 100 segundos
+      $timeout = 10000000; // 100 segundos
       if (!isset($_SESSION['usuario']) || (time() - $_SESSION['LAST_ACTIVITY'] > $timeout)) {
         header('Location: '.LOGIN);
         die();

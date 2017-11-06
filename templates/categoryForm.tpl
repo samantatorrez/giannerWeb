@@ -1,7 +1,7 @@
-<div class="form-group">
+<!-- <div class="form-group">
   <label for="nombre">Id:</label>
   <input type="text" name="id" class="form-control" readonly value="{$categoria['id']}">
-</div>
+</div> -->
 <div class="form-group">
   <label for="nombre">Nombre:</label>
   <input type="text" name="nombre" class="form-control" value="{$categoria['nombre']}">

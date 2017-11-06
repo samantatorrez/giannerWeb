@@ -18,13 +18,13 @@
             <th>Nombre</th>
             <th>Medidas</th>
             <th>Precio</th>
-            <th>Id_categoria</th>
+            <th>Categoria</th>
             <th>Descripción</th>
           </tr>
         </thead>
         <tbody>
           {foreach from=$productos item=product}
-          {include 'productRow.tpl'}
+            {include 'productRow.tpl'}
           {/foreach}
         </tbody>
       </table>
@@ -42,13 +42,12 @@
       <table id="tablaCategorias" class="table">
         <thead>
           <tr>
-            <th>Id</th>
-            <th>nombre</th>
+            <th>Nombre</th>
           </tr>
         </thead>
         <tbody>
           {foreach from=$categorias item=categoria}
-          <tr><td>{$categoria['id']}</td>
+          <tr>
             <td>{$categoria['nombre']}</td>
             <td><button data-id= {$categoria['id']} type="button" class="btn btn-danger">Borrar</button></td>
             <td><button data-id= {$categoria['id']} type="button" class="btn btn-default">Editar</button></td>
@@ -62,10 +61,10 @@
       <div id="mensajeCategorias">
       </div>
       <form id="formularioCategoria" action="agregarCategoria" method="post">
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="nombre">Id:</label>
           <input type="text" name="id" class="form-control" readonly>
-        </div>
+        </div> -->
         <div class="form-group">
           <label for="nombre">Nombre:</label>
           <input type="text" name="nombre" class="form-control">

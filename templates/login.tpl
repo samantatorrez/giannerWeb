@@ -4,8 +4,8 @@
       <form action="verificarUsuario" method="POST">
         <h2 class="form-signin-heading text-center">Iniciar Sesion</h2>
         <div class="form-group">
-          <label for="usuario">Usuario</label>
-          <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Nombre de usuario" required autofocus>
+          <label for="usuario">Direccion de mail</label>
+          <input type="email" class="form-control" id="usuario" name="usuario" placeholder="ejemplo@ejemplo.com" required autofocus>
         </div>
         <div class="form-group">
           <label for="password">Contraseña</label>
