@@ -27,5 +27,6 @@
   <script src="js/bootstrap.js"></script>
   <script src="js/login.js"></script>
   <script src="js/logout.js"></script>
+  <script src="js/registrarUsuario.js"></script>
   <script src="js/vistaProductos.js"></script>
   <script src="js/partialRender.js"></script>

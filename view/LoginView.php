@@ -10,6 +10,12 @@
       $this->smarty->display('login.tpl');
     }
 
+    public function mostrarFormularioReg($error='')
+    {
+      $this->smarty->assign('error', $error);
+      $this->smarty->display('registrar.tpl');
+    }
+
   }
 
 ?>

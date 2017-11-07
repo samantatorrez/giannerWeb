@@ -1,0 +1,26 @@
+[07-Nov-2017 02:34:57 Europe/Berlin] PHP Notice:  Undefined variable: loginController in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:34:57 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:35:54 Europe/Berlin] PHP Notice:  Undefined variable: loginController in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:35:54 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:37:28 Europe/Berlin] PHP Notice:  Undefined variable: loginController in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:37:28 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:37:51 Europe/Berlin] PHP Notice:  Undefined variable: loginController in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:37:51 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:38:47 Europe/Berlin] PHP Notice:  Undefined variable: loginController in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:38:47 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:40:04 Europe/Berlin] PHP Notice:  Undefined variable: loginController in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:40:04 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:41:22 Europe/Berlin] PHP Notice:  Undefined variable: loginController in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:41:22 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:41:24 Europe/Berlin] PHP Notice:  Undefined variable: loginController in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 02:41:24 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 20:49:59 Europe/Berlin] Error creando nueva base desde archivo o problema de conexión con la base.
+[07-Nov-2017 20:50:51 Europe/Berlin] PHP Notice:  Undefined variable: loginController in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 20:50:51 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 21:07:15 Europe/Berlin] PHP Notice:  Undefined variable: loginController in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 21:07:15 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 21:07:20 Europe/Berlin] PHP Notice:  Undefined variable: loginController in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 21:07:20 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 21:07:28 Europe/Berlin] PHP Notice:  Undefined variable: loginController in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 21:07:28 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 18
+[07-Nov-2017 21:07:51 Europe/Berlin] PHP Fatal error:  Call to a member function usuarioLogueado() on null in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 23

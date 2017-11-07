@@ -1,6 +1,8 @@
 <?php
-  require_once 'model/UsuarioModel.php';
-  require_once 'view/LoginView.php';
+  include_once(dirname(__DIR__).'/model/UsuarioModel.php');
+  include_once(dirname(__DIR__).'/controller/Controller.php');
+  include_once(dirname(__DIR__).'/controller/PageController.php');
+  include_once(dirname(__DIR__).'/view/LoginView.php');
 
   class LoginController extends Controller
   {
@@ -16,6 +18,19 @@
       $this->view->mostrarFormulario();
     }
 
+    public function usuarioLogueado(){
+     session_start();
+     if(isset($_SESSION['USER'])) {
+       $usuario = $this->model->getUsuario($_SESSION['USER']);
+           return $usuario;
+       }
+     }
+
+    public function mostrarRegistrar()
+    {
+      $this->view->mostrarFormularioReg();
+    }
+
     public function verificar()
     {
       if(!empty($_POST['usuario']) && !empty($_POST['password'])){
@@ -23,15 +38,25 @@
         $password = $_POST['password'];
         $user = $this->model->getUsuario($userName);
         if((!empty($user)) && password_verify($password, $user['password'])) {
-          if ($user['role'] == 1) {
-            session_start();
-            $_SESSION['usuario'] = $userName;
-            $_SESSION['LAST_ACTIVITY'] = time();
-            header('Location: '.ADMIN);
-          }
-          else{
-            $this->view->mostrarFormulario('Usted no tiene permiso para ingresar a modo administrador.');
-          }
+          session_start();
+          $_SESSION['usuario'] = $userName;
+          $_SESSION['LAST_ACTIVITY'] = time();
+          header('Location: '.ADMIN);
+          // if ($user['role'] == 1) {
+          //   header('Location: '.ADMIN);
+          // }
+          // else {
+          //   header('Location: '.HOME);
+          // }
+          // if ($user['role'] == 1) {
+          //   session_start();
+          //   $_SESSION['usuario'] = $userName;
+          //   $_SESSION['LAST_ACTIVITY'] = time();
+          //   header('Location: '.ADMIN);
+          // }
+          // else{
+          //   $this->view->mostrarFormulario('Usted no tiene permiso para ingresar a modo administrador.');
+          // }
         }
         else{
           // header('Location: '.LOGIN);

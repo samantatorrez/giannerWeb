@@ -21,6 +21,8 @@
       'borrarCategoria' => 'AdminController#borrarCategoria',
       'obtenerFormularioEditarCategoria' => 'AdminController#obtenerFormularioEditarCategoria',
 
+      'mostrarRegistrar' => 'LoginController#mostrarRegistrar',
+
       'login' => 'LoginController#mostrarLogin',
       'verificarUsuario' => 'LoginController#verificar',
       'logout' => 'LoginController#cerrar'

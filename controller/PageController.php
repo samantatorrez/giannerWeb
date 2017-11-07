@@ -1,17 +1,27 @@
 <?php
-  require_once 'model/ProductModel.php';
-  require_once 'model/CategoryModel.php';
-  require_once 'view/PageView.php';
+  include_once(dirname(__DIR__).'/controller/controller.php');
+  require_once(dirname(__DIR__).'/controller/loginController.php');
+  require_once(dirname(__DIR__).'/model/ProductModel.php');
+  require_once(dirname(__DIR__).'/model/CategoryModel.php');
+  require_once(dirname(__DIR__).'/view/PageView.php');
 
   class PageController extends Controller
   {
+    private $usuario;
+		private $loginController;
     private $productModel;
     private $categoryModel;
 
-    function __construct()
+    public function __construct()
     {
       $this->view = new PageView();
-    }
+      // $this->$loginController = new LoginController();
+      // $this->setUsuarioLogueado();
+		}
+
+		public function setUsuarioLogueado(){
+			 $this->usuario=$this->loginController->usuarioLogueado();
+		}
 
     public function mostrarIndex()
     {
