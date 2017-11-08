@@ -72,7 +72,7 @@ INSERT INTO `producto` (`id`, `nombre`, `descripcion`, `precio`, `medidas`, `id_
 
 CREATE TABLE `usuario` (
   `id` int(11) NOT NULL,
-  `mail` varchar(200) NOT NULL,
+  `username` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL,
   `role` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -81,9 +81,9 @@ CREATE TABLE `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`id`, `mail`, `password`, `role`) VALUES
-(1, 'fer@gmail.com', '$2y$10$XOE071dzGW5wrNcj4dH03eDYzE9KelHUd5SiQ8KZHH1uyc8vBOD9a', 0),
-(2, 'dara@gmail.com', '$2y$10$r4ctfD7c5DQ0r8ATbmaoD.H1buOSV197QGfOaVTokoDw9XunNrcqC', 1);
+INSERT INTO `usuario` (`id`, `username`, `password`, `role`) VALUES
+(1, 'Fer', '$2y$10$XOE071dzGW5wrNcj4dH03eDYzE9KelHUd5SiQ8KZHH1uyc8vBOD9a', 0),
+(2, 'Dara', '$2y$10$r4ctfD7c5DQ0r8ATbmaoD.H1buOSV197QGfOaVTokoDw9XunNrcqC', 1);
 
 -- --------------------------------------------------------
 
@@ -92,21 +92,18 @@ INSERT INTO `usuario` (`id`, `mail`, `password`, `role`) VALUES
 --
 
 CREATE TABLE `imagen` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `ruta` VARCHAR(200) NOT NULL,
-  `fk_id_producto` INT NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE (`fk_id_producto`)
-) ENGINE = InnoDB;
+ `id` INT(11) NOT NULL,
+ `ruta` VARCHAR(100) NOT NULL,
+ `fk_id_producto` INT(11) NOT NULL
+) ENGINE = InnoDB  DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `imagen`
 --
 
-INSERT INTO `imagen` (`id_imagen`, `ruta`, `fk_id_profesor`) VALUES
-(1, 'images/billeteraLolita.jpg', 1),
-(2, 'images/mochilaCatrina.jpg', 2),
-(3, 'images/morralPeque.jpg', 3);
+INSERT INTO `imagen` (`id`, `ruta`, `fk_id_producto`) VALUES
+('1', 'images/mochilaCatrina.jpg', '1'),
+('2', 'images/morralPeque.jpg', '3');
 
 --
 -- Índices para tablas volcadas
@@ -135,8 +132,9 @@ ALTER TABLE `usuario`
 -- Indices de la tabla `imagen`
 --
 ALTER TABLE `imagen`
-  ADD PRIMARY KEY (`id`);
-
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `fk_id_producto_2` (`fk_id_producto`),
+  ADD KEY `fk_id_producto` (`fk_id_producto`);
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
@@ -157,10 +155,12 @@ ALTER TABLE `producto`
 ALTER TABLE `usuario`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT de la tabla `producto`
+--AUTO_INCREMENT de la tabla `imagen`
 --
 ALTER TABLE `imagen`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+
+
 --
 -- Restricciones para tablas volcadas
 --
@@ -170,6 +170,12 @@ ALTER TABLE `imagen`
 --
 ALTER TABLE `producto`
   ADD CONSTRAINT `producto_ibfk_1` FOREIGN KEY (`id_categoria`) REFERENCES `categoria` (`id`);
+
+--
+-- Filtros para la tabla `imagen`
+--
+ALTER TABLE `imagen`
+  ADD CONSTRAINT `imagen_ibfk_1` FOREIGN KEY (`fk_id_producto`) REFERENCES `producto` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
