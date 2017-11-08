@@ -30,3 +30,4 @@
 [08-Nov-2017 02:57:39 Europe/Berlin] SQLSTATE[HY000] [1049] Unknown database 'gianner_web_db'
 [08-Nov-2017 03:05:50 Europe/Berlin] SQLSTATE[HY000] [1049] Unknown database 'gianner_web_db'
 [08-Nov-2017 03:31:31 Europe/Berlin] SQLSTATE[HY000] [1049] Unknown database 'gianner_web_db'
+[08-Nov-2017 14:01:04 Europe/Berlin] PHP Notice:  Undefined index: valCategoria in C:\xampp\htdocs\giannerWeb\controller\PageController.php on line 75
