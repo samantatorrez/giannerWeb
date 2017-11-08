@@ -1,12 +1,12 @@
 <section>
   <div class="container">
     <div class="row productos">
-      <form class="form-horizontal" action="listarXCategoria" method="GET">
+      <form class="pull-right" action="listarXCategoria" method="GET">
         <div class="form-group">
-          <label class="control-label col-sm-4">¿Qué queres ver?:</label>
-          <div class="col-sm-3">
+          <label class="control-label col-sm-4">Categorias: </label>
+          <div class="col-sm-8">
             <select class="form-control" id="getCategory">
-                <option></option>
+                <option>Todas</option>
               {foreach from=$categorias item=categoria}
                 <option>{$categoria['nombre']}</option>
               {/foreach}

@@ -63,7 +63,7 @@
     {
       $this->productModel = new ProductModel();
       $categoria = $_GET['valCategoria'];
-      if (empty($categoria)) {
+      if ($categoria === 'Todas') {
         $productos = $this->productModel->obtenerProductos();
         $this->view->mostrarxCategoria($productos);
       }
