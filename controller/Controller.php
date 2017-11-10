@@ -1,6 +1,7 @@
 <?php
   define('HOME', 'http://'.$_SERVER['SERVER_NAME'] . dirname($_SERVER['PHP_SELF']).'/');
   define('ADMIN', 'http://'.$_SERVER['SERVER_NAME'] . dirname($_SERVER['PHP_SELF']).'/admin');
+  define('HOMELOGGED', 'http://'.$_SERVER['SERVER_NAME'] . dirname($_SERVER['PHP_SELF']).'/homeLogged');
 
   include_once 'exceptions/ListExceptions.php';
 

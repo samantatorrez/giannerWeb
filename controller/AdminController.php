@@ -14,12 +14,20 @@
     parent::__construct();
     $this->view = new AdminView();
     try{
+      if (!$this->isAdmin()) {
+        header('Location: '.HOMELOGGED);
+        die();
+      }
       $this->productModel= new ProductModel();
       $this->categoryModel= new CategoryModel();
     } catch (DataBaseException $e){
       $this->errorHandler($e->getMessage());
       throw $e;
     }
+  }
+
+  private function isAdmin(){
+    return $this->loginModel->isAdmin($_SESSION['usuario']);
   }
 
   public function mostrarAdmin()

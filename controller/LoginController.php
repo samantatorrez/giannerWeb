@@ -13,7 +13,13 @@
 
     public function mostrarLogin()
     {
-      $this->view->mostrarFormulario();
+      $this->view->mostrarFormulario(false);
+    }
+
+    private function session($username){
+      session_start();
+      $_SESSION['usuario'] = $username;
+      $_SESSION['LAST_ACTIVITY'] = time();
     }
 
     public function verificar()
@@ -23,20 +29,22 @@
         $password = $_POST['password'];
         $user = $this->model->getUsuario($userName);
         if((!empty($user)) && password_verify($password, $user['password'])) {
-          if ($user['role'] == 1) {
-            session_start();
-            $_SESSION['usuario'] = $userName;
-            $_SESSION['LAST_ACTIVITY'] = time();
+          if ($user['role'] == 1){
+            $this->session($userName);
             header('Location: '.ADMIN);
+            die();
+          } elseif ($user['role'] == 0) {
+            $this->session($userName);
+            header('Location: '.HOMELOGGED);
+            die();
+          } else {
+            $this->view->mostrarError('usted no tiene permiso para ingresar',false);
           }
-          else{
-            $this->view->mostrarFormulario('Usted no tiene permiso para ingresar a modo administrador.');
-          }
+        } else {
+          $this->view->mostrarError('Usuario o Password incorrectos.',false);
         }
-        else{
-          // header('Location: '.LOGIN);
-          $this->view->mostrarFormulario('Usuario o Password incorrectos.');
-        }
+      } else {
+          $this->view->mostrarError('Usuario o Password vacios.',false);
       }
     }
 
@@ -45,6 +53,28 @@
       session_start();
       session_destroy();
       header('Location: '.HOME);
+    }
+
+    public function agregarUsuario(){
+      if(!empty($_POST['usuario']) && !empty($_POST['password'])){
+          try{
+            $userName = $_POST['usuario'];
+            $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+            $role = 0;
+            $user = $this->model->addUsuario($userName,$password,$role);
+            $this->session($userName);
+            header('Location: '.HOMELOGGED);
+          } catch (Exception $e){
+            $this->view->mostrarError('Error al dar el alta.',true);
+            error_log( $e->getMessage());
+          }
+        } else {
+          $this->view->mostrarError('Usuario o Password incorrectos.',true);
+        }
+      }
+
+    public function mostrarSignUp(){
+      $this->view->mostrarFormulario(true);
     }
 
   }

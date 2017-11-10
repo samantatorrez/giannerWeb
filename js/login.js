@@ -5,23 +5,39 @@ $(document).ready(function (){
       	e.preventDefault();
       	loguearse();
    });
+	 $(document).on("click", "#btnSignUp", function (e){
+		 e.preventDefault();
+		 registrarse();
+	 });
 
 });
 
+	function redireccion(url){
+		var data = {'usuario': $('#usuario').val(), 'password': $('#password').val()};
+			$('#usuario').val('');
+			$('#password').val('');
+			$.ajax({
+				type: "POST",
+				datatype: "JSON",
+				url: url,
+				data: data,
+				success: function (data) {
+					if ($(data).hasClass("giannerHead")){
+						$("body").html(data);
+					} else {
+						$("#contenido").html(data);
+					}
+				},
+				error: function() {
+					alert("error al iniciar sesion");
+				},
+			});
+	}
+
    function loguearse() {
-			var data = {'usuario': $('#usuario').val(), 'password': $('#password').val()};
-			  $('#usuario').val('');
-			  $('#password').val('');
-			  $.ajax({
-					type: "POST",
-					datatype: "JSON",
-					url: "route.php?action=verificarUsuario",
-					data: data,
-					success: function (data) {
-			      $("#contenido").html(data);
-					},
-					error: function() {
-				    alert("error al iniciar sesion");
-					},
-			  });
+		 redireccion("route.php?action=verificarUsuario");
 	  }
+
+		function registrarse() {
+			redireccion("route.php?action=agregarUsuario");
+		}

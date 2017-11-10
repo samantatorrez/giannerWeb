@@ -2,12 +2,13 @@ section{
   padding-bottom: 30px;
 }
 
-#btnlogin, #btnlogout{
+.login{
   background: #e30e1e;
   color: #ffffff;
+  height: 50px;
 }
 
-#btnlogin:hover, #btnlogout:hover{
+.login:hover{
   background-color: #ddd;
   color: black;
 }

@@ -11,12 +11,14 @@
     function __construct()
     {
       $this->view = new NavigationBarView();
+      $this->productModel = new ProductModel();
+      $this->categoryModel = new CategoryModel();
     }
 
     public function mostrarIndex()
     {
       try {
-        $this->productModel = new ProductModel();
+
         $productosCategorias = $this->productModel->obtenerProductosConNombreCategoria();
         $this->view->mostrarIndex($productosCategorias);
       } catch (Exception $e){
@@ -29,9 +31,20 @@
     public function mostrarHome()
     {
       try {
-        $this->productModel = new ProductModel();
         $productosCategorias = $this->productModel->obtenerProductosConNombreCategoria();
         $this->view->mostrarHome($productosCategorias);
+      } catch (Exception $e){
+        $this->errorHandler($e->getMessage());
+        error_log( $e->getMessage());
+        throw $e;
+      }
+    }
+
+    public function mostrarHomeLogged()
+    {
+      try {
+        $productosCategorias = $this->productModel->obtenerProductosConNombreCategoria();
+        $this->view->mostrarHomeLogged($productosCategorias);
       } catch (Exception $e){
         $this->errorHandler($e->getMessage());
         error_log( $e->getMessage());
@@ -42,8 +55,6 @@
     public function mostrarProductos()
     {
       try {
-        $this->productModel = new ProductModel();
-        $this->categoryModel = new CategoryModel();
         $productos = $this->productModel->obtenerProductos();
         $categorias = $this->categoryModel->obtenerCategorias();
         $this->view->mostrarProductos($productos,$categorias);

@@ -42,6 +42,7 @@ $( document ).ready(function() {
       data : serializedData,
       dataType : "HTML",
       success : function(resultData) {
+        alert();
         if($(resultData).hasClass("alert-danger")){ // si es mensaje de error
           $("#mensajeProductos").html(resultData);
         } else {

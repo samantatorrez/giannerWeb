@@ -16,6 +16,12 @@
       $this->smarty->display('home.tpl');
     }
 
+    public function mostrarHomeLogged($productosCategorias)
+    {
+      $this->smarty->assign('productosCategorias', $productosCategorias);
+      $this->smarty->display('homeLogged.tpl');
+    }
+
     public function mostrarProductos($productos,$categorias)
     {
       $this->smarty->assign('productos', $productos);

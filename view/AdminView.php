@@ -60,6 +60,7 @@
     {
       $this->smarty->assign('productos', $productos);
       $this->smarty->assign('categorias', $categorias);
+      $this->smarty->assign('isAdmin', true);//POR AHORA HASTA INCORPORAR ROLES
       $this->smarty->display('admin.tpl');
     }
 

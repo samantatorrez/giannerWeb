@@ -7,6 +7,7 @@
       'home'=> 'NavigationBarController#mostrarHome',
       'producto' => 'NavigationBarController#mostrarProductos',
       'contacto' => 'NavigationBarController#mostrarContactos',
+      'homeLogged' =>'NavigationBarController#mostrarHomeLogged',
 
       'admin' => 'AdminController#mostrarAdmin',
       'agregarProducto' => 'AdminController#agregarProducto',
@@ -21,6 +22,8 @@
 
       'login' => 'LoginController#mostrarLogin',
       'verificarUsuario' => 'LoginController#verificar',
+      'signup' => 'LoginController#mostrarSignUp',
+      'agregarUsuario' => 'LoginController#agregarUsuario',
       'logout' => 'LoginController#cerrar'
     ];
   }
