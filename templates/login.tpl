@@ -14,12 +14,7 @@
         {if !empty($error) }
           <div class="alert alert-danger" role="alert">{$error}</div>
         {/if}
-        <button type="submit" class="btn btn-lg btn-primary btn-block" id="btnlogin">Acceder</button>
-        <div>
-          <h5 class="text-center">¿No tienes una cuenta?</h5>
-          <a class="btn btn-dark btn-block" href="mostrarRegistrar" id="btnregistrar" name="btnregistrar">Registrese</a>
-          <!-- <button type="submit" class="btn btn-dark btn-block" id="btnregistrar" action="registrar">Registrese</button> -->
-        </div>
+        <button type="submit" class="btn btn-default login" id="btnlogin">Acceder</button>
       </form>
     </div>
   </div>
