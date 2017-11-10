@@ -6,7 +6,7 @@
   require_once 'model/DBModel.php';
   require_once 'view/View.php';
   require_once 'controller/Controller.php';
-  require_once 'controller/PageController.php';
+  require_once 'controller/NavigationBarController.php';
   require_once 'controller/AdminController.php';
   require_once 'controller/LoginController.php';
   require_once 'controller/SecuredController.php';

@@ -1,16 +1,16 @@
 <?php
   require_once 'model/ProductModel.php';
   require_once 'model/CategoryModel.php';
-  require_once 'view/PageView.php';
+  require_once 'view/NavigationBarView.php';
 
-  class PageController extends Controller
+  class NavigationBarController extends Controller
   {
     private $productModel;
     private $categoryModel;
 
     function __construct()
     {
-      $this->view = new PageView();
+      $this->view = new NavigationBarView();
     }
 
     public function mostrarIndex()
