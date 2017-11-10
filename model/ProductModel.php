@@ -12,10 +12,23 @@
     #PRODUCTOS
     function obtenerProductos()
     {
+      $productosImg = [];
       $sql  = 'SELECT * FROM `producto`';
       $sentencia = $this->db->prepare($sql);
       $sentencia->execute();
-      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+      $productos = $sentencia->fetchAll(PDO::FETCH_ASSOC);
+      foreach ($productos as $producto) {
+        //$tarea tiene id_tarea, titulo, descripcion, completado
+        $sentencia_imgs = $this->db->prepare( 'SELECT * FROM imagen WHERE fk_id_producto = ?');
+        $sentencia_imgs->execute([$producto['id']]);
+        $imagenes = $sentencia_imgs->fetchAll(PDO::FETCH_ASSOC);
+        //imagenes tiene [[id_imagen, ruta],[id_imagen, ruta], [id_imagen, ruta]]
+        $producto['imagenes'] = $imagenes;
+        //tarea va a agregar la key 'imagenes', entonces tiene
+        //tiene id_tarea, titulo, descripcion, completado, imagenes(arreglo)
+        $productosImg[] = $producto;
+      }
+      return $productosImg;
     }
 
     function obtenerProducto($id)
