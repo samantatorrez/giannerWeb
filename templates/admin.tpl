@@ -14,7 +14,7 @@
       <table id="tablaProductos" class="table">
         <thead>
           <tr>
-            <th>Id</th>
+            <th>Imagen/es</th>
             <th>Nombre</th>
             <th>Medidas</th>
             <th>Precio</th>
@@ -32,7 +32,7 @@
       <div id="mensajeProductos">
       </div>
       <div class="col-sm-12 col-md-12 form-group">
-        <form id="formularioProducto" action="agregarProducto" method="post" >
+        <form id="formularioProducto" action="agregarProducto" method="POST" enctype="multipart/form-data">
         </form>
       </div>
     </div>

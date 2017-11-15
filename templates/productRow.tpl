@@ -1,5 +1,9 @@
 <tr>
-  <td>{$product['id']}</td>
+  <td>
+    {foreach from=$product['imagenes'] item=imagen}
+      <img src="{$imagen['ruta']}" alt="Imagen de la tarea {$product['nombre']}" class="img-rounded">
+    {/foreach}
+  </td>
   <td>{$product['nombre']}</td>
   <td>{$product['medidas']}</td>
   <td>{$product['precio']}</td>

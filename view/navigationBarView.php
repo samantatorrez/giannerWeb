@@ -19,6 +19,8 @@
     public function mostrarProductos($productos,$categorias)
     {
       $this->smarty->assign('productos', $productos);
+      // $imagen = $productos[0]['imagenes'][0];
+      // $this->smarty->assign('imagen', $imagen);
       $this->smarty->assign('categorias', $categorias);
       $this->smarty->display('productos.tpl');
     }

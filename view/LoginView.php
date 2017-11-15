@@ -9,7 +9,7 @@
       $this->smarty->assign('error', $error);
       $this->smarty->display('login.tpl');
     }
-
+    
   }
 
 ?>

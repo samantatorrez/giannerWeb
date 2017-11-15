@@ -5,6 +5,7 @@
     <title>Gianner</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="fonts/font-awesome.min.css"> -->
     <link rel="stylesheet" href="css/loginStyle.css">
     <link rel="stylesheet" href="css/style.css">
   </head>

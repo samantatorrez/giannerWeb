@@ -9,10 +9,10 @@
       parent::__construct();
     }
 
-    public function getUsuario($userName)
+    public function getUsuario($mail)
     {
-      $sentencia = $this->db->prepare( "SELECT * FROM usuario WHERE username = ? LIMIT 1");
-      $sentencia->execute([$userName]);
+      $sentencia = $this->db->prepare( "SELECT * FROM usuario WHERE mail = ? LIMIT 1");
+      $sentencia->execute([$mail]);
       return $sentencia->fetch(PDO::FETCH_ASSOC);
     }
 
