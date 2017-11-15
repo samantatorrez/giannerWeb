@@ -1,4 +1,5 @@
 <?php
+
   include_once(dirname(__DIR__).'/controller/controller.php');
   require_once(dirname(__DIR__).'/controller/loginController.php');
   require_once(dirname(__DIR__).'/model/ProductModel.php');
@@ -65,7 +66,7 @@
     {
       $this->productModel = new ProductModel();
       $categoria = $_GET['valCategoria'];
-      if (empty($categoria)) {
+      if ($categoria === 'Todas') {
         $productos = $this->productModel->obtenerProductos();
         $this->view->mostrarxCategoria($productos);
       }

@@ -1,12 +1,12 @@
 <section>
   <div class="container">
     <div class="row productos">
-      <form class="form-horizontal" action="listarXCategoria" method="GET">
+      <form class="pull-right" action="listarXCategoria" method="GET">
         <div class="form-group">
-          <label class="control-label col-sm-4">¿Qué queres ver?:</label>
-          <div class="col-sm-3">
+          <label class="control-label col-sm-4">Categorias: </label>
+          <div class="col-sm-8">
             <select class="form-control" id="getCategory">
-                <option></option>
+                <option>Todas</option>
               {foreach from=$categorias item=categoria}
                 <option>{$categoria['nombre']}</option>
               {/foreach}
@@ -19,11 +19,10 @@
         <table class="table">
           <thead>
             <tr>
-              <th>IMAGEN</th>
               <th>NOMBRE</th>
               <th>DECRIPCION</th>
-              <!-- <th>MEDIDAS</th>
-              <th>PRECIO</th> -->
+              <th>MEDIDAS</th>
+              <th>PRECIO</th>
             </tr>
           </thead>
           <tbody id="contenidoTabla">
@@ -34,25 +33,3 @@
     </div>
   </div>
 </section>
-
-  <!-- <div class="container-fluid">
-    <div class="row productos">
-      <ul>
-        {foreach from=$categorias item=categoria}
-          <li>{$categoria['nombre']}</li>
-            <ul>
-              {foreach from=$productos item=producto}
-                {if $categoria['id'] == $producto['id_categoria']}
-                  <li>{$producto['nombre']}</li>
-                  <li>{$producto['descripcion']}</li>
-                  <li>{$producto['precio']}</li>
-                  <li>{$producto['medidas']}</li>
-                  <hr>
-                {/if}
-              {/foreach}
-            </ul>
-          </li>
-        {/foreach}
-      </ul>
-    </div>
-  </div> -->
