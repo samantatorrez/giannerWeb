@@ -1,5 +1,5 @@
 <?php
-  include_once 'DBModel.php';
+  require_once 'DBModel.php';
 
   class LoginModel extends DBModel
   {
@@ -9,7 +9,7 @@
       parent::__construct();
     }
 
-    public function getUsuario($userName)
+    public function getUsuario($mail)
     {
       $sentencia = $this->db->prepare( "SELECT * FROM usuario WHERE username = :username LIMIT 1");
       $sentencia->execute(array(":username"=>$userName));

@@ -9,6 +9,8 @@
       'contacto' => 'NavigationBarController#mostrarContactos',
       'homeLogged' =>'NavigationBarController#mostrarHomeLogged',
 
+      'listarXCategoria' => 'NavigationBarController#filtrarProductos',
+
       'admin' => 'AdminController#mostrarAdmin',
       'agregarProducto' => 'AdminController#agregarProducto',
       'borrarProducto' => 'AdminController#borrarProducto',
@@ -19,6 +21,8 @@
       'editarCategoria' => 'AdminController#editarCategoria',
       'borrarCategoria' => 'AdminController#borrarCategoria',
       'obtenerFormularioEditarCategoria' => 'AdminController#obtenerFormularioEditarCategoria',
+
+      'mostrarRegistrar' => 'LoginController#mostrarRegistrar',
 
       'login' => 'LoginController#mostrarLogin',
       'verificarUsuario' => 'LoginController#verificar',

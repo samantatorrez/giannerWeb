@@ -49,6 +49,10 @@ html{
   color: black;
 }
 
+div.form-group{
+  margin-top: 15px;
+}
+
 .imagenPortada {
   width: 100%;
 }
@@ -64,8 +68,8 @@ html{
 }
 
 ul {
-    list-style-image: url('../images/icon.jpg');
-    margin-left: 25%;
+  list-style-image: url('../images/icon.jpg');
+  margin-left: 25%;
 }
 
 .presentacionLinea, .precios, .formularioContacto {
@@ -79,4 +83,9 @@ ul {
 
 .billeteraLolita {
   height: 100%;
+}
+
+img.img-rounded{
+  width:200px;
+  height:200px;
 }

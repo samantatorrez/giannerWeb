@@ -1,5 +1,5 @@
 <?php
-  include_once 'view/View.php';
+  require_once 'view/View.php';
 
   class AdminView extends View
   {
@@ -43,8 +43,6 @@
 
     public function mostrarHome($productos)
     {
-      print_r($productos);
-      die();
       $this->smarty->assign('productos', $productos);
       $this->smarty->display('home.tpl');
     }
