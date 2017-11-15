@@ -54,6 +54,7 @@
         $destino = 'images/uploaded/' . $nombre . $index . '.jpg';
         move_uploaded_file($imagen, $destino);
         $rutas[]=$destino;
+        $index++;
       }
       return $rutas;
     }
@@ -68,12 +69,6 @@
                                   ":medidas"=>$medidas,
                                   ":precio"=>$precio,
                                   ":id_categoria"=>$id_categoria));
-      // $producto = array('id' => $this->db->lastInsertId(),
-      //               'nombre' => $nombre,
-      //               'descripcion'=> $descripcion,
-      //               'medidas'=> $medidas,
-      //               'precio' => $precio,
-      //               'id_categoria' => $id_categoria );
       $id_prod = $this->db->lastInsertId();
       $rutas = $this->subirImagenes($imagenes,$nombre);
       $sqlImg = 'INSERT INTO imagen(ruta, fk_id_producto) VALUES(?, ?)';
@@ -139,8 +134,22 @@
       $sql  = 'SELECT producto.*, categoria.nombre AS nombre_categoria FROM producto, categoria WHERE producto.id_categoria = categoria.id ';
       $sentencia = $this->db->prepare($sql);
       $sentencia->execute();
-      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+      $productos = $sentencia->fetchAll(PDO::FETCH_ASSOC);
+      // $imagenes = $this->getImagenes($productos['id']);
+      // $productos['imagenes'] = $imagenes;
+      return $productos;
+    }
 
+    function obtenerProductoConNombreCategoria($id_prod)
+    {
+      $sql  = 'SELECT producto.*, categoria.nombre AS nombre_categoria FROM producto, categoria WHERE producto.id = ? && producto.id_categoria = categoria.id ';
+      $sentencia = $this->db->prepare($sql);
+      $sentencia->execute([$id_prod]);
+      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+      $producto = $sentencia->fetchAll(PDO::FETCH_ASSOC);
+      $imagenes = $this->getImagenes($id_prod);
+      $producto['imagenes'] = $imagenes;
+      return $producto;
     }
 
   }
