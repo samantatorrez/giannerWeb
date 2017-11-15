@@ -1,5 +1,5 @@
 <?php
-  include_once 'view/View.php';
+  require_once 'view/View.php';
 
   class AdminView extends View
   {

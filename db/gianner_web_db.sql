@@ -52,18 +52,17 @@ CREATE TABLE `producto` (
   `descripcion` text NOT NULL,
   `precio` int(11) NOT NULL,
   `medidas` varchar(100) NOT NULL,
-  `id_categoria` int(11) NOT NULL,
-  `imagen_dir` varchar(100) NOT NULL
+  `id_categoria` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `producto`
 --
 
-INSERT INTO `producto` (`id`, `nombre`, `descripcion`, `precio`, `medidas`, `id_categoria`, `imagen_dir`) VALUES
-(1, 'Katrina Black', 'Cuero napón liso bordeaux mate.\r\nDetalles en charol importado italiano bordeaux.\r\nTela gobelino estampado con motivos florales, fondo negro.\r\nHerrajes baño oro.\r\nTexturado de tapa (referencia a caja toráxica humana)\r\nCerradura de aperture por rotación.\r\nBolsillo interno con cierre, abertura 18 cm.\r\nApertura y cierre mediante ojales a tornillo de alta calidad y cordón de cuero con regulador de tensión.\r\nTapones dorados pirámide en base.\r\nCorreas regulables con hebillas.\r\n', 1950, '30 x 29 x 19 cm', 1, 'images/mochilaCatrina.jpg'),
-(2, 'Isabella', 'Cuero napón liso bordeaux mate.\r\nDetalles en charol importado italiano bordeaux.\r\nTela gobelino estampado con motivos florales, fondo negro.\r\nHerrajes baño oro.\r\nTexturado de tapa (referencia a columna vertebral)\r\nCerradura de aperture por rotación.\r\nBolsillo delantero con vivo de cuero.\r\nTapones dorados pirámide en base.\r\nCorrea superior de agarre con detalle de remache piramide dirado.\r\nLlavero extraible en cuero liso bordeaux y charol italiano con logo Gianner.', 1500, '32 x 25 x 7 cm', 3, 'images/morralPeque.jpg'),
-(3, 'Lolita', 'Cuero exterior grabado ¨caviar¨ rosa tropic.\r\nGobelino floreado.\r\nLogo Gianner con baño oro.\r\nCierre de bronce negro.\r\nDeslizador con capuchón dorado con rosa de cuero.\r\nTarjetero interno con 12 compartimientos.\r\nMonedero interno con cierre y deslizador.\r\nInterior en shantung negro bordado.', 840, '21 x 12 cm', 2, 'images/billeteraLolita.jpg');
+INSERT INTO `producto` (`id`, `nombre`, `descripcion`, `precio`, `medidas`, `id_categoria`) VALUES
+(1, 'Katrina Black', 'Cuero napón liso bordeaux mate.\r\nDetalles en charol importado italiano bordeaux.\r\nTela gobelino estampado con motivos florales, fondo negro.\r\nHerrajes baño oro.\r\nTexturado de tapa (referencia a caja toráxica humana)\r\nCerradura de aperture por rotación.\r\nBolsillo interno con cierre, abertura 18 cm.\r\nApertura y cierre mediante ojales a tornillo de alta calidad y cordón de cuero con regulador de tensión.\r\nTapones dorados pirámide en base.\r\nCorreas regulables con hebillas.\r\n', 1950, '30 x 29 x 19 cm', 1),
+(2, 'Isabella', 'Cuero napón liso bordeaux mate.\r\nDetalles en charol importado italiano bordeaux.\r\nTela gobelino estampado con motivos florales, fondo negro.\r\nHerrajes baño oro.\r\nTexturado de tapa (referencia a columna vertebral)\r\nCerradura de aperture por rotación.\r\nBolsillo delantero con vivo de cuero.\r\nTapones dorados pirámide en base.\r\nCorrea superior de agarre con detalle de remache piramide dirado.\r\nLlavero extraible en cuero liso bordeaux y charol italiano con logo Gianner.', 1500, '32 x 25 x 7 cm', 3),
+(3, 'Lolita', 'Cuero exterior grabado ¨caviar¨ rosa tropic.\r\nGobelino floreado.\r\nLogo Gianner con baño oro.\r\nCierre de bronce negro.\r\nDeslizador con capuchón dorado con rosa de cuero.\r\nTarjetero interno con 12 compartimientos.\r\nMonedero interno con cierre y deslizador.\r\nInterior en shantung negro bordado.', 840, '21 x 12 cm', 2);
 
 -- --------------------------------------------------------
 
@@ -83,8 +82,29 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id`, `username`, `password`, `role`) VALUES
-(1, 'Fer', '$2y$10$XOE071dzGW5wrNcj4dH03eDYzE9KelHUd5SiQ8KZHH1uyc8vBOD9a', 0), 
+(1, 'Fer', '$2y$10$XOE071dzGW5wrNcj4dH03eDYzE9KelHUd5SiQ8KZHH1uyc8vBOD9a', 0),
 (2, 'Dara', '$2y$10$r4ctfD7c5DQ0r8ATbmaoD.H1buOSV197QGfOaVTokoDw9XunNrcqC', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `imagen`
+--
+
+CREATE TABLE `imagen` (
+ `id` INT(11) NOT NULL,
+ `ruta` VARCHAR(100) NOT NULL,
+ `fk_id_producto` INT(11) NOT NULL
+) ENGINE = InnoDB  DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `imagen`
+--
+
+INSERT INTO `imagen` (`id`, `ruta`, `fk_id_producto`) VALUES
+(1, 'images/mochilaCatrina.jpg', 1),
+(2, 'images/morralPeque.jpg', 3),
+(3, 'images/morralPeque.jpg', 1);
 
 --
 -- Índices para tablas volcadas
@@ -110,6 +130,12 @@ ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `imagen`
+--
+ALTER TABLE `imagen`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_id_producto` (`fk_id_producto`);
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -129,6 +155,13 @@ ALTER TABLE `producto`
 ALTER TABLE `usuario`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
+--AUTO_INCREMENT de la tabla `imagen`
+--
+ALTER TABLE `imagen`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+
+
+--
 -- Restricciones para tablas volcadas
 --
 
@@ -137,6 +170,12 @@ ALTER TABLE `usuario`
 --
 ALTER TABLE `producto`
   ADD CONSTRAINT `producto_ibfk_1` FOREIGN KEY (`id_categoria`) REFERENCES `categoria` (`id`);
+
+--
+-- Filtros para la tabla `imagen`
+--
+ALTER TABLE `imagen`
+  ADD CONSTRAINT `imagen_ibfk_1` FOREIGN KEY (`fk_id_producto`) REFERENCES `producto` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

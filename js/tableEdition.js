@@ -38,12 +38,14 @@ $( document ).ready(function() {
     var action = $("#formularioProducto").attr('action');
     let url = BASE_URI + action;
     let form = $(this);
-    let serializedData = form.serialize();
+    let form_data = new FormData(this);
     $.ajax({
       url: url,
       type: "POST",
-      data : serializedData,
-      dataType : "HTML",
+      contentType: false,
+      processData: false,
+      data : form_data,
+      // dataType : "HTML",
       success : function(resultData) {
         alert();
         if($(resultData).hasClass("alert-danger")){ // si es mensaje de error

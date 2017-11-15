@@ -1,5 +1,5 @@
 <?php
-  include_once 'DBModel.php';
+  require_once 'DBModel.php';
 
   class CategoryModel extends DBModel
   {
@@ -11,7 +11,7 @@
     #CATEGORIA
     function obtenerCategorias()
     {
-      $sql  = 'SELECT * FROM `categoria`';
+      $sql  = 'SELECT * FROM `categoria` ORDER BY nombre ASC';
       $sentencia = $this->db->prepare($sql);
       $sentencia->execute();
       return $sentencia->fetchAll(PDO::FETCH_ASSOC);
@@ -27,8 +27,7 @@
 
     function agregarCategoria($nombre)
     {
-      $sql= 'INSERT INTO categoria(nombre)'
-      .' VALUES(:nombre)';
+      $sql= 'INSERT INTO categoria(nombre)'.' VALUES(:nombre)';
       $sentencia = $this->db->prepare($sql);
       $sentencia->execute(array(":nombre"=>$nombre));
       $categoria = array('id' => $this->db->lastInsertId(),

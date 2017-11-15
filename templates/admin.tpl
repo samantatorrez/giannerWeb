@@ -1,13 +1,19 @@
 
+<<<<<<< HEAD
     {include 'header.tpl'}
-
-    <div id="contenido">
-      <div class="container-fluid precios">
-        <div class="blackFriday">
-          <h1> Modo Administrador 💀🌺💀🌺</h1>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-md-12">
+=======
+<div class="pull-right">
+  <!-- {if isset($usuario)}
+    <h5><strong>Hola!{$usuario['username']}</strong></h5>
+  {/if} -->
+  <button type="submit" class="btn btn-default" id="btnlogout">Cerrar Sesion</button>
+</div>
+<div class="container-fluid precios">
+  <div class="blackFriday">
+    <h1> Modo Administrador 💀🌺💀🌺</h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
             <h2>🌺Productos🌺</h2>
             <table id="tablaProductos" class="table">
               <thead>

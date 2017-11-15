@@ -1,11 +1,12 @@
 <?php
-  include_once 'exceptions/ListExceptions.php';
+  require_once 'exceptions/ListExceptions.php';
   class SecuredController extends Controller
   {
     protected $loginModel;
     function __construct()
     {
       session_start();
+      $timeout = 1000000; // 100 segundos
       $this->loginModel = new LoginModel();
     }
     protected function isAdmin(){
