@@ -102,8 +102,9 @@ CREATE TABLE `imagen` (
 --
 
 INSERT INTO `imagen` (`id`, `ruta`, `fk_id_producto`) VALUES
-('1', 'images/mochilaCatrina.jpg', '1'),
-('2', 'images/morralPeque.jpg', '3')
+(1, 'images/mochilaCatrina.jpg', 1),
+(2, 'images/morralPeque.jpg', 3),
+(3, 'images/morralPeque.jpg', 1);
 
 --
 -- Índices para tablas volcadas
@@ -133,7 +134,6 @@ ALTER TABLE `usuario`
 --
 ALTER TABLE `imagen`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `fk_id_producto_2` (`fk_id_producto`),
   ADD KEY `fk_id_producto` (`fk_id_producto`);
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -158,7 +158,7 @@ ALTER TABLE `usuario`
 --AUTO_INCREMENT de la tabla `imagen`
 --
 ALTER TABLE `imagen`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 
 
 --

@@ -1,12 +1,12 @@
 <?php
-  include_once 'exceptions/ListExceptions.php';
+  require_once 'exceptions/ListExceptions.php';
   class SecuredController extends Controller
   {
 
     function __construct()
     {
       session_start();
-      $timeout = 100; // 100 segundos
+      $timeout = 10000000; // 100 segundos
       if (!isset($_SESSION['usuario']) || (time() - $_SESSION['LAST_ACTIVITY'] > $timeout)) {
         header('Location: '.LOGIN);
         die();

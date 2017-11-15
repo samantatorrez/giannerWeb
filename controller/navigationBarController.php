@@ -1,14 +1,17 @@
 <?php
-  include_once 'model/ProductModel.php';
-  include_once 'model/CategoryModel.php';
-  include_once 'view/NavigationBarView.php';
+
+  include_once(dirname(__DIR__).'/controller/controller.php');
+  require_once(dirname(__DIR__).'/controller/loginController.php');
+  require_once(dirname(__DIR__).'/model/ProductModel.php');
+  require_once(dirname(__DIR__).'/model/CategoryModel.php');
+  require_once(dirname(__DIR__).'/view/NavigationBarView.php');
 
   class NavigationBarController extends Controller
   {
     private $productModel;
     private $categoryModel;
 
-    function __construct()
+    public function __construct()
     {
       $this->view = new NavigationBarView();
     }
@@ -58,6 +61,34 @@
     {
       $this->view->mostrarContactos();
     }
+
+    public function filtrarProductos()
+    {
+      $this->productModel = new ProductModel();
+      $categoria = $_GET['valCategoria'];
+      if ($categoria === 'Todas') {
+        $productos = $this->productModel->obtenerProductos();
+        $this->view->mostrarxCategoria($productos);
+      }
+      else
+      {
+        $productosFiltrados = $this->productModel->filtrarxCategoria($categoria);
+        if (!empty($productosFiltrados)) {
+          $this->view->mostrarxCategoria($productosFiltrados);
+        }
+        else{
+          echo "No hay productos que sean de esta categoria.";
+        }
+      }
+
+      // try {
+      //
+      // } catch (Exception $e) {
+      //   $this->errorHandler("No hay productos que sean de esa categoria.");
+      //   error_log( $e->getMessage());
+      // }
+    }
+
   }
 
 ?>
