@@ -3,12 +3,12 @@
     public static $ACTION = "action";
     public static $PARAMS = "params";
     public static $ACTIONS = [
-      ''=> 'PageController#mostrarIndex',
-      'home'=> 'PageController#mostrarHome',
-      'producto' => 'PageController#mostrarProductos',
-      'contacto' => 'PageController#mostrarContactos',
+      ''=> 'NavigationBarController#mostrarIndex',
+      'home'=> 'NavigationBarController#mostrarHome',
+      'producto' => 'NavigationBarController#mostrarProductos',
+      'contacto' => 'NavigationBarController#mostrarContactos',
 
-      'listarXCategoria' => 'PageController#filtrarProductos',
+      'listarXCategoria' => 'NavigationBarController#filtrarProductos',
 
       'admin' => 'AdminController#mostrarAdmin',
       'agregarProducto' => 'AdminController#agregarProducto',

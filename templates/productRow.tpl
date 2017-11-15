@@ -1,7 +1,7 @@
 <tr>
   <td>
     {foreach from=$product['imagenes'] item=imagen}
-      <img src="{$imagen['ruta']}" alt="Imagen de la tarea {$product['nombre']}">
+      <img src="{$imagen['ruta']}" alt="Imagen de la tarea {$product['nombre']}" class="img-rounded">
     {/foreach}
   </td>
   <td>{$product['nombre']}</td>

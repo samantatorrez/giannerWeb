@@ -22,8 +22,8 @@
               <th>IMAGEN</th>
               <th>NOMBRE</th>
               <th>DECRIPCION</th>
-              <th>MEDIDAS</th>
-              <th>PRECIO</th>
+              <!-- <th>MEDIDAS</th>
+              <th>PRECIO</th> -->
             </tr>
           </thead>
           <tbody id="contenidoTabla">

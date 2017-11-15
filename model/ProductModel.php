@@ -18,14 +18,11 @@
       $sentencia->execute();
       $productos = $sentencia->fetchAll(PDO::FETCH_ASSOC);
       foreach ($productos as $producto) {
-        //$tarea tiene id_tarea, titulo, descripcion, completado
-        $sentencia_imgs = $this->db->prepare( 'SELECT * FROM imagen WHERE fk_id_producto = ?');
-        $sentencia_imgs->execute([$producto['id']]);
-        $imagenes = $sentencia_imgs->fetchAll(PDO::FETCH_ASSOC);
+        $imagenes = $this->getImagenes($producto['id']);
         //imagenes tiene [[id_imagen, ruta],[id_imagen, ruta], [id_imagen, ruta]]
         $producto['imagenes'] = $imagenes;
-        //tarea va a agregar la key 'imagenes', entonces tiene
-        //tiene id_tarea, titulo, descripcion, completado, imagenes(arreglo)
+        //producto va a agregar la key 'imagenes', entonces tiene
+        // id, nombre, descripcion, precio, medidas, imagenes(arreglo)
         $productosImg[] = $producto;
       }
       return $productosImg;
@@ -33,13 +30,35 @@
 
     function obtenerProducto($id)
     {
-      $sql= 'SELECT * FROM producto WHERE id=?';
+      $sql= 'SELECT * FROM producto WHERE id=:id';
       $sentencia = $this->db->prepare($sql);
-      $sentencia->execute(array($id));
-      return $sentencia->fetch();
+      $sentencia->execute(array('id' => $id));
+      $producto = $sentencia->fetch();
+      $imagenes = $this->getImagenes($id);
+      $producto['imagenes'] = $imagenes;
+      return $producto;
     }
 
-    function agregarProducto($nombre,$descripcion,$medidas,$precio,$id_categoria)
+    private function getImagenes($id)
+    {
+      $sql= 'SELECT * FROM imagen WHERE fk_id_producto=:id';
+      $sentencia = $this->db->prepare($sql);
+      $sentencia->execute(array('id' => $id));
+      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    private function subirImagenes($imagenes,$nombre){
+      $rutas = [];
+      $index = 0;
+      foreach ($imagenes as $imagen) {
+        $destino = 'images/uploaded/' . $nombre . $index . '.jpg';
+        move_uploaded_file($imagen, $destino);
+        $rutas[]=$destino;
+      }
+      return $rutas;
+    }
+
+    function agregarProducto($nombre,$descripcion,$medidas,$precio,$id_categoria,$imagenes)
     {
       $sql= 'INSERT INTO producto(nombre, descripcion, medidas, precio, id_categoria)'
       .' VALUES(:nombre, :descripcion, :medidas, :precio, :id_categoria)';
@@ -49,13 +68,20 @@
                                   ":medidas"=>$medidas,
                                   ":precio"=>$precio,
                                   ":id_categoria"=>$id_categoria));
-      $producto = array('id' => $this->db->lastInsertId(),
-                    'nombre' => $nombre,
-                    'descripcion'=> $descripcion,
-                    'medidas'=> $medidas,
-                    'precio' => $precio,
-                    'id_categoria' => $id_categoria );
-      return $producto;
+      // $producto = array('id' => $this->db->lastInsertId(),
+      //               'nombre' => $nombre,
+      //               'descripcion'=> $descripcion,
+      //               'medidas'=> $medidas,
+      //               'precio' => $precio,
+      //               'id_categoria' => $id_categoria );
+      $id_prod = $this->db->lastInsertId();
+      $rutas = $this->subirImagenes($imagenes,$nombre);
+      $sqlImg = 'INSERT INTO imagen(ruta, fk_id_producto) VALUES(?, ?)';
+      $sentencia_imagenes = $this->db->prepare($sqlImg);
+      foreach ($rutas as $ruta) {
+        $sentencia_imagenes->execute([$ruta,$id_prod]);
+      }
+      return $id_prod;
     }
 
     function borrarProducto($id)
@@ -95,10 +121,17 @@
 
     public function filtrarxCategoria($categoria)
     {
-      $sql = 'SELECT * FROM producto WHERE id_categoria = (SELECT id FROM categoria WHERE nombre = ?)';
+      $productosImg = [];
+      $sql = 'SELECT * FROM producto WHERE id_categoria = (SELECT id FROM categoria WHERE nombre = :categoria)';
       $sentencia = $this->db->prepare($sql);
       $sentencia->execute(array($categoria));
-      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+      $productos = $sentencia->fetchAll(PDO::FETCH_ASSOC);
+      foreach ($productos as $producto) {
+        $imagenes = $this->getImagenes($producto['id']);
+        $producto['imagenes'] = $imagenes;
+        $productosImg[] = $producto;
+      }
+      return $productosImg;
     }
 
     function obtenerProductosConNombreCategoria()

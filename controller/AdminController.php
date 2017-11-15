@@ -4,14 +4,14 @@
  require_once 'view/AdminView.php';
  require_once 'controller/SecuredController.php';
 
- class AdminController extends SecuredController
+ class AdminController
 {
   private $productModel;
   private $categoryModel;
 
   function __construct()
   {
-    parent::__construct();
+
     $this->view = new AdminView();
     try{
       $this->productModel= new ProductModel();
@@ -35,22 +35,39 @@
     }
   }
 
+  private function sonJPG($imagenesTipos)
+  {
+    foreach ($imagenesTipos as $tipo){
+      if($tipo != 'image/jpeg')
+        return false;
+    }
+    return true;
+  }
+
   public function agregarProducto(){
     try {
       if(!isset($_POST['nombre']) || empty($_POST['nombre'])){
         throw new ParameterRequiredException("Parametro obligatorio: nombre");
       }
       if(!isset($_POST['id_categoria']) || empty($_POST['id_categoria'])){
-        throw new ParameterRequiredException("Parametro obligatorio: id categoria");
+        throw new ParameterRequiredException("Parametro obligatorio: categoria");
       }
+      // if($this->sonJPG($_FILES['imagenes']['type'])){
+      //   throw new ParameterRequiredException("Las imagenes tienen que ser JPG.");
+      // }
+
+      $rutaTempImagenes = $_FILES['imagenes']['tmp_name'];
+
       $nombre = $_POST['nombre'];
       $id_categoria = $_POST['id_categoria'];
       $descripcion = $_POST['descripcion'];
       $medidas = $_POST['medidas'];
       $precio = isset($_POST['precio']) ? $_POST['precio'] : 0;
-      $producto = $this->productModel
-                  ->agregarProducto($nombre,$descripcion,$medidas,$precio,$id_categoria);
+
+      $id_producto = $this->productModel->agregarProducto($nombre,$descripcion,$medidas,$precio,$id_categoria,$rutaTempImagenes);
+      $producto = $this->productModel->obtenerProducto($id_producto);
       $this->view->obtenerFilaProducto($producto);
+
     } catch (ParameterRequiredException $e){
       $this->errorHandler($e->getMessage());
     } catch (DataBaseException $e){
@@ -90,7 +107,7 @@
         throw new ParameterRequiredException("Parametro obligatorio: nombre");
       }
       if(!isset($_POST['id_categoria']) || empty($_POST['id_categoria'])){
-        throw new ParameterRequiredException("Parametro obligatorio: id categoria");
+        throw new ParameterRequiredException("Parametro obligatorio: categoria");
       }
 
       $id= $_POST['id'];
