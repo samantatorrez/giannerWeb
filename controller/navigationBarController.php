@@ -5,6 +5,7 @@
   require_once(dirname(__DIR__).'/model/ProductModel.php');
   require_once(dirname(__DIR__).'/model/CategoryModel.php');
   require_once(dirname(__DIR__).'/view/NavigationBarView.php');
+  require_once(dirname(__DIR__).'/controller/SecuredController.php');
 
   class NavigationBarController extends SecuredController
   {

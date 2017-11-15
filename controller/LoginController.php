@@ -3,13 +3,15 @@
   include_once(dirname(__DIR__).'/model/UsuarioModel.php');
   include_once(dirname(__DIR__).'/controller/Controller.php');
   include_once(dirname(__DIR__).'/controller/NavigationBarController.php');
+  include_once(dirname(__DIR__).'/controller/SecuredController.php');
   include_once(dirname(__DIR__).'/view/LoginView.php');
 
-  class LoginController extends Controller
+  class LoginController extends SecuredController
   {
 
     function __construct()
     {
+      parent::__construct();
       $this->view = new LoginView();
       $this->model = new LoginModel();
     }
@@ -44,8 +46,7 @@
         $userName = $_POST['usuario'];
         $password = $_POST['password'];
         $user = $this->model->getUsuario($userName);
-        print_r($user);
-        die();
+
         if((!empty($user)) && password_verify($password, $user['password'])) {
           if ($user['role'] == 1){
             $this->session($userName);

@@ -1,0 +1,44 @@
+<h3>Comentarios - Producto: {{nombre_producto}}</h3>
+<div class="table-responsive">
+  <table id="tablaComentarios " class="table">
+    <thead>
+      <tr>
+        <th>Puntaje</th>
+        <th>Comentario</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#arreglo}}
+      <tr>
+        <td>{{puntaje}}</td>
+        <td>{{comentario}}</td>
+        {{#admin}}
+        <td><button data-id= {{id}} data-name="{{nombre_producto}}" data-producto="{{id_producto}}" type="button" class="btn btn-danger">Borrar</button></td>
+        {{/admin}}
+      </tr>
+      {{/arreglo}}
+    </tbody>
+  </table>
+</div>
+
+{{#logged}}
+<form id="formularioComentario" >
+  <div class="form-group">
+    <label for="puntaje">Puntaje:</label>
+    <select class="form-control" name="puntaje" id="puntaje">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+  
+  <div class="form-group">
+    <label for="coemntario">Comentario:</label>
+    <input type="text" name="comentario" class="form-control">
+  </div>
+  <button type="button" data-id= {{id_producto}} data-name="{{nombre_producto}}" class="btn btn-default">Subir</button>
+</form>
+{{/logged}}

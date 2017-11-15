@@ -22,14 +22,15 @@ class CommentApiController extends Api
   {
       $id_producto = $url_params[":id_producto"];
       $comment = $this->model->getCommentsByProduct($id_producto);
-      if($comment)
-        return $this->json_response($comment, 200);
-      else
-        return $this->json_response(false, 404);
+      $param["param"] =$comment;
+      $param["admin"] =$this->isAdmin();
+      $param["logged"] =$this->isLogged();
+      return $this->json_response($param, 200);
   }
 
   public function deleteComment($url_params = [])
   {
+    if($this->isAdmin()){
       $id = $url_params[":id"];
       $comment = $this->model->getComment($id);
       if($comment)
@@ -39,16 +40,24 @@ class CommentApiController extends Api
       }
       else
         return $this->json_response(false, 404);
+    } else {
+      return $this->json_response("sin permisos", 404);
+    }  
   }
 
   public function addComment($url_params = []) {
-    $body = json_decode($this->raw_data);
-    $id_producto = $body->id_producto;
-    $puntaje = $body->puntaje;
-    $comentario = $body->comentario;
-    $id= $this->model->addComment($id_producto, $puntaje, $comentario);
-    $comentarioGuardado = $this->model->getComment($id);
-    return $this->json_response($comentarioGuardado, 200);
+    if($this->isLogged()){
+      $id_producto = $url_params[":id_producto"];
+      $body = json_decode($this->raw_data);
+      $puntaje = $body->puntaje;
+      $comentario = $body->comentario;
+      $id= $this->model->addComment($id_producto, $puntaje, $comentario);
+      $comentarioGuardado = $this->model->getComment($id);
+      return $this->json_response($comentarioGuardado, 200);
+    } else {
+      return $this->json_response("sin permisos", 404);
+    }
+
   }
 }
  ?>

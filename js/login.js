@@ -1,12 +1,12 @@
 $(document).ready(function (){
 	"use strict";
 
-   $(document).on("click", "#btnlogin", function (e) {
-      	e.preventDefault();
+   $(document).on("click", "#btnlogin", function (event) {
+      	event.preventDefault();
       	loguearse();
    });
-	 $(document).on("click", "#btnSignUp", function (e){
-		 e.preventDefault();
+	 $(document).on("click", "#btnSignUp", function (event){
+		 event.preventDefault();
 		 registrarse();
 	 });
 

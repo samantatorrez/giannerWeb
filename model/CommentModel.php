@@ -19,10 +19,10 @@
 
     function getComment($id)
     {
-      $sql= 'SELECT * FROM comentario WHERE id=:id';
+      $sql= 'SELECT * FROM comentario WHERE id=:id limit 1';
       $sentencia = $this->db->prepare($sql);
       $sentencia->execute(array(":id"=>$id));
-      return $sentencia->fetch();
+      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
     }
 
     function getCommentsByProduct($id_producto)

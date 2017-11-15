@@ -11,12 +11,8 @@
     </td>
     <td>{$producto['nombre']}</td>
     <td>{$producto['descripcion']}</td>
-    <!-- <td>
-      <a href="" data-idprofesor="" class="detalles" id="producto">
-        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-      </a>
-    </td> -->
-    <!-- <td>{$producto['medidas']}</td>
-    <td>{$producto['precio']}</td> -->
+    <td>{$producto['medidas']}</td>
+    <td>{$producto['precio']}</td>
+    <td><button data-id= {$producto['id']} data-name={$producto['nombre']} type="button" class="btn btn-default">Comentarios</button></td>
   </tr>
 {/foreach}

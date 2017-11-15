@@ -9,7 +9,7 @@ include_once 'config/router.php';
   //url, verb, controller, method
   $router->AddRoute("comments", "GET", "CommentApiController", "getComments");
   $router->AddRoute("comments/:id_producto", "GET", "CommentApiController", "getCommentsByProduct");
-  $router->AddRoute("comments/", "POST", "CommentApiController", "addComment");
+  $router->AddRoute("comments/:id_producto", "POST", "CommentApiController", "addComment");
   $router->AddRoute("comments/:id", "DELETE", "CommentApiController", "deleteComment");
   $route = $_GET['resource'];
   $array = $router->Route($route);

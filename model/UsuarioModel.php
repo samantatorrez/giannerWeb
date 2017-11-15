@@ -9,7 +9,7 @@
       parent::__construct();
     }
 
-    public function getUsuario($mail)
+    public function getUsuario($userName)
     {
       $sentencia = $this->db->prepare( "SELECT * FROM usuario WHERE username = :username LIMIT 1");
       $sentencia->execute(array(":username"=>$userName));
