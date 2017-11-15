@@ -1,0 +1,8 @@
+[15-Nov-2017 01:25:44 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\giannerWeb\model\ProductModel.php on line 127
+[15-Nov-2017 01:25:53 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\giannerWeb\model\ProductModel.php on line 127
+[15-Nov-2017 01:25:55 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\giannerWeb\model\ProductModel.php on line 127
+[15-Nov-2017 01:32:22 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\giannerWeb\model\ProductModel.php on line 127
+[15-Nov-2017 01:34:08 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\giannerWeb\model\ProductModel.php on line 127
+[15-Nov-2017 01:37:10 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\giannerWeb\model\ProductModel.php on line 127
+[15-Nov-2017 01:37:19 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\giannerWeb\model\ProductModel.php on line 127
+[15-Nov-2017 01:38:49 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\giannerWeb\model\ProductModel.php on line 127

@@ -124,7 +124,7 @@
       $productosImg = [];
       $sql = 'SELECT * FROM producto WHERE id_categoria = (SELECT id FROM categoria WHERE nombre = :categoria)';
       $sentencia = $this->db->prepare($sql);
-      $sentencia->execute(array($categoria));
+      $sentencia->execute(array(":categoria"=>$categoria));
       $productos = $sentencia->fetchAll(PDO::FETCH_ASSOC);
       foreach ($productos as $producto) {
         $imagenes = $this->getImagenes($producto['id']);
