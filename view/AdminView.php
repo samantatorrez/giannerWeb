@@ -43,8 +43,6 @@
 
     public function mostrarHome($productos)
     {
-      print_r($productos);
-      die();
       $this->smarty->assign('productos', $productos);
       $this->smarty->display('home.tpl');
     }
@@ -56,12 +54,22 @@
       $this->smarty->display('productos.tpl');
     }
 
-    public function mostrarAdmin($productos, $categorias)
+    public function mostrarAdmin($productos, $categorias, $usuarios, $getUser)
     {
       $this->smarty->assign('productos', $productos);
       $this->smarty->assign('categorias', $categorias);
-      $this->smarty->assign('isAdmin', true);//POR AHORA HASTA INCORPORAR ROLES
+      $this->smarty->assign('usuarios', $usuarios);
+      $this->smarty->assign('isAdmin', true);
+      $this->smarty->assign('isLogged', true);
+      $this->smarty->assign('isAdminTab', true);
+      $this->smarty->assign('getUser', $getUser);
       $this->smarty->display('admin.tpl');
+    }
+
+    public function mostrarUsuario($usuario)
+    {
+      $this->smarty->assign('usuario', $usuario);
+      $this->smarty->display('usuario.tpl');
     }
 
   }

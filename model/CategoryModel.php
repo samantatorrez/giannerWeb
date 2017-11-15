@@ -19,9 +19,9 @@
 
     function obtenerCategoria($id)
     {
-      $sql= 'SELECT * FROM categoria WHERE id=?';
+      $sql= 'SELECT * FROM categoria WHERE id=:id';
       $sentencia = $this->db->prepare($sql);
-      $sentencia->execute(array($id));
+      $sentencia->execute(array(":id"=>$id));
       return $sentencia->fetch();
     }
 
@@ -38,9 +38,9 @@
 
     function borrarCategoria($id)
     {
-      $sql = 'DELETE FROM categoria WHERE id=?';
+      $sql = 'DELETE FROM categoria WHERE id=:id';
       $sentencia = $this->db->prepare($sql);
-      $sentencia->execute(array($id));
+      $sentencia->execute(array(":id"=>$id));
       if($sentencia->rowCount()==0){
         throw new DataBaseException("Error no es posible borrar esta categoria.");
       }

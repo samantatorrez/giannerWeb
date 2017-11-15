@@ -20,9 +20,9 @@
 
     function obtenerProducto($id)
     {
-      $sql= 'SELECT * FROM producto WHERE id=?';
+      $sql= 'SELECT * FROM producto WHERE id=:id';
       $sentencia = $this->db->prepare($sql);
-      $sentencia->execute(array($id));
+      $sentencia->execute(array(":id"=>$id));
       return $sentencia->fetch();
     }
 

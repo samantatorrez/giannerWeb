@@ -431,3 +431,75 @@
 [10-Nov-2017 12:05:20 Europe/Berlin] Dara
 [10-Nov-2017 12:05:20 Europe/Berlin] PHP Notice:  Undefined variable: userName in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 21
 [10-Nov-2017 12:05:20 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in C:\xampp\htdocs\giannerWeb\controller\SecuredController.php on line 11
+[12-Nov-2017 17:55:21 Europe/Berlin] PHP Notice:  Undefined index: role in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 149
+[12-Nov-2017 17:55:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 149
+[12-Nov-2017 17:55:21 Europe/Berlin] PHP Notice:  Undefined index: role in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 149
+[12-Nov-2017 17:55:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 149
+[12-Nov-2017 17:55:21 Europe/Berlin] PHP Notice:  Undefined index: role in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 149
+[12-Nov-2017 17:55:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 149
+[12-Nov-2017 17:55:21 Europe/Berlin] PHP Notice:  Undefined index: role in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 149
+[12-Nov-2017 17:55:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 149
+[12-Nov-2017 17:55:21 Europe/Berlin] PHP Notice:  Undefined index: role in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 149
+[12-Nov-2017 17:55:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 149
+[12-Nov-2017 17:55:21 Europe/Berlin] PHP Notice:  Undefined index: role in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 149
+[12-Nov-2017 17:55:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 149
+[12-Nov-2017 17:55:21 Europe/Berlin] PHP Notice:  Undefined index: role in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 149
+[12-Nov-2017 17:55:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 149
+[13-Nov-2017 11:23:32 Europe/Berlin] PHP Notice:  Undefined variable: usuario in C:\xampp\htdocs\giannerWeb\model\UsuarioModel.php on line 74
+[13-Nov-2017 11:24:36 Europe/Berlin] PHP Notice:  Undefined variable: usuario in C:\xampp\htdocs\giannerWeb\model\UsuarioModel.php on line 74
+[15-Nov-2017 04:04:32 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:04:33 Europe/Berlin] PHP Warning:  session_start(): open(C:\xampp\tmp\sess_bfrblfmkskki1ehmmfq8uv6a65, O_RDWR) failed: Permission denied (13) in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 53
+[15-Nov-2017 04:04:34 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:04:34 Europe/Berlin] PHP Warning:  session_start(): open(C:\xampp\tmp\sess_bfrblfmkskki1ehmmfq8uv6a65, O_RDWR) failed: Permission denied (13) in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 53
+[15-Nov-2017 04:04:36 Europe/Berlin] PHP Warning:  session_start(): open(C:\xampp\tmp\sess_bfrblfmkskki1ehmmfq8uv6a65, O_RDWR) failed: Permission denied (13) in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 53
+[15-Nov-2017 04:04:36 Europe/Berlin] PHP Warning:  session_start(): open(C:\xampp\tmp\sess_bfrblfmkskki1ehmmfq8uv6a65, O_RDWR) failed: Permission denied (13) in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 53
+[15-Nov-2017 04:04:36 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:04:36 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:05:18 Europe/Berlin] PHP Warning:  session_start(): open(C:\xampp\tmp\sess_bfrblfmkskki1ehmmfq8uv6a65, O_RDWR) failed: Permission denied (13) in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 53
+[15-Nov-2017 04:05:18 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:05:18 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:05:18 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:05:18 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:05:18 Europe/Berlin] PHP Warning:  session_start(): open(C:\xampp\tmp\sess_bfrblfmkskki1ehmmfq8uv6a65, O_RDWR) failed: Permission denied (13) in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 53
+[15-Nov-2017 04:05:19 Europe/Berlin] PHP Warning:  session_start(): open(C:\xampp\tmp\sess_bfrblfmkskki1ehmmfq8uv6a65, O_RDWR) failed: Permission denied (13) in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 53
+[15-Nov-2017 04:05:19 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:05:19 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:05:19 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:05:19 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:05:19 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:05:19 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:05:19 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:15:30 Europe/Berlin] PHP Fatal error:  Call to undefined function isLogged() in C:\xampp\htdocs\giannerWeb\controller\navigationBarController.php on line 24
+[15-Nov-2017 04:16:12 Europe/Berlin] PHP Fatal error:  Call to undefined function isLogged() in C:\xampp\htdocs\giannerWeb\controller\navigationBarController.php on line 24
+[15-Nov-2017 04:18:11 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:26:55 Europe/Berlin] PHP Notice:  Undefined index: isLogged in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:26:55 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:28:20 Europe/Berlin] PHP Notice:  Undefined index: isLogged in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:28:20 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:28:55 Europe/Berlin] PHP Notice:  Undefined index: isLogged in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:28:55 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:29:52 Europe/Berlin] PHP Notice:  Undefined index: isLogged in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:29:52 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:33:41 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:33:42 Europe/Berlin] PHP Warning:  session_start(): open(C:\xampp\tmp\sess_pm96b8f9hab4d71qaop48hvt97, O_RDWR) failed: Permission denied (13) in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 53
+[15-Nov-2017 04:33:43 Europe/Berlin] PHP Warning:  session_start(): open(C:\xampp\tmp\sess_pm96b8f9hab4d71qaop48hvt97, O_RDWR) failed: Permission denied (13) in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 53
+[15-Nov-2017 04:33:43 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:33:43 Europe/Berlin] PHP Warning:  session_start(): open(C:\xampp\tmp\sess_pm96b8f9hab4d71qaop48hvt97, O_RDWR) failed: Permission denied (13) in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 53
+[15-Nov-2017 04:33:43 Europe/Berlin] PHP Warning:  session_start(): open(C:\xampp\tmp\sess_pm96b8f9hab4d71qaop48hvt97, O_RDWR) failed: Permission denied (13) in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 53
+[15-Nov-2017 04:33:43 Europe/Berlin] PHP Warning:  session_start(): open(C:\xampp\tmp\sess_pm96b8f9hab4d71qaop48hvt97, O_RDWR) failed: Permission denied (13) in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 53
+[15-Nov-2017 04:33:43 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 04:39:31 Europe/Berlin] PHP Notice:  Undefined index: isLogged in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:39:31 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:42:26 Europe/Berlin] Syntax error in template "file:C:\xampp\htdocs\giannerWeb\templates\nav.tpl"  on line 12 "{if $isLogged|eq_true}" unknown modifier "eq_true"
+[15-Nov-2017 04:42:26 Europe/Berlin] Syntax error in template "file:C:\xampp\htdocs\giannerWeb\templates\nav.tpl"  on line 12 "{if $isLogged|eq_true}" unknown modifier "eq_true"
+[15-Nov-2017 04:42:44 Europe/Berlin] PHP Notice:  Undefined index: isLogged in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:42:44 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:43:04 Europe/Berlin] PHP Notice:  Undefined index: isLogged in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:43:04 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:43:54 Europe/Berlin] Syntax error in template "file:C:\xampp\htdocs\giannerWeb\templates\nav.tpl"  on line 12 "{if isset($isLogged) && $isLogged|eq_true}" unknown modifier "eq_true"
+[15-Nov-2017 04:43:54 Europe/Berlin] Syntax error in template "file:C:\xampp\htdocs\giannerWeb\templates\nav.tpl"  on line 12 "{if isset($isLogged) && $isLogged|eq_true}" unknown modifier "eq_true"
+[15-Nov-2017 04:44:08 Europe/Berlin] PHP Notice:  Undefined index: isLogged in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 04:44:08 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\c7a3bd51459380bf81999a9b91c26ee469e6d650_0.file.nav.tpl.php on line 36
+[15-Nov-2017 05:10:37 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 05:10:37 Europe/Berlin] PHP Warning:  session_destroy(): Session object destruction failed in C:\xampp\htdocs\giannerWeb\controller\LoginController.php on line 54
+[15-Nov-2017 05:27:24 Europe/Berlin] PHP Notice:  Undefined index: usuario in C:\xampp\htdocs\giannerWeb\controller\SecuredController.php on line 19

@@ -7,7 +7,6 @@
       'home'=> 'NavigationBarController#mostrarHome',
       'producto' => 'NavigationBarController#mostrarProductos',
       'contacto' => 'NavigationBarController#mostrarContactos',
-      'homeLogged' =>'NavigationBarController#mostrarHomeLogged',
 
       'admin' => 'AdminController#mostrarAdmin',
       'agregarProducto' => 'AdminController#agregarProducto',
@@ -18,13 +17,18 @@
       'agregarCategoria' => 'AdminController#agregarCategoria',
       'editarCategoria' => 'AdminController#editarCategoria',
       'borrarCategoria' => 'AdminController#borrarCategoria',
+      'borrarUsuario' => 'AdminController#borrarUsuario',
+      'agregarAdmin' => 'AdminController#agregarAdmin',
+      'quitarAdmin' => 'AdminController#quitarAdmin',
       'obtenerFormularioEditarCategoria' => 'AdminController#obtenerFormularioEditarCategoria',
 
       'login' => 'LoginController#mostrarLogin',
       'verificarUsuario' => 'LoginController#verificar',
       'signup' => 'LoginController#mostrarSignUp',
       'agregarUsuario' => 'LoginController#agregarUsuario',
-      'logout' => 'LoginController#cerrar'
+      'logout' => 'LoginController#cerrar',
+
+
     ];
   }
  ?>

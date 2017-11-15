@@ -6,17 +6,21 @@
     function __construct()
     {
       session_start();
-      $timeout = 100; // 100 segundos
       $this->loginModel = new LoginModel();
-      if (!isset($_SESSION['usuario']) || (time() - $_SESSION['LAST_ACTIVITY'] > $timeout)) {
-        header('Location: '.LOGIN);
-        die();
-      }
     }
-
-    protected function errorHandler($error)
-    {
-      $this->view->mostrarError($error);
+    protected function isAdmin(){
+      return ($this->isLogged() && $this->loginModel->isAdmin($_SESSION['usuario'])) == 1 ? true : false;
+    }
+    protected function isLogged(){
+      $timeout = 100; // 100 segundos
+      return (isset($_SESSION['usuario']) && (time() - $_SESSION['LAST_ACTIVITY'] < $timeout)) == 1 ? true : false;
+    }
+    protected function getUser(){
+       if (isset($_SESSION['usuario'])){
+         return $_SESSION['usuario'];
+       } else {
+         return '';
+       }
     }
 
   }

@@ -4,9 +4,12 @@
   class NavigationBarView extends View
   {
 
-    public function mostrarIndex($productosCategorias)
+    public function mostrarIndex($productosCategorias,$isLogged,$isAdmin,$getUser)
     {
       $this->smarty->assign('productosCategorias', $productosCategorias);
+      $this->smarty->assign('isLogged',$isLogged);
+      $this->smarty->assign('isAdmin',$isAdmin);
+      $this->smarty->assign('getUser', $getUser);
       $this->smarty->display('index.tpl');
     }
 
@@ -14,12 +17,6 @@
     {
       $this->smarty->assign('productosCategorias', $productosCategorias);
       $this->smarty->display('home.tpl');
-    }
-
-    public function mostrarHomeLogged($productosCategorias)
-    {
-      $this->smarty->assign('productosCategorias', $productosCategorias);
-      $this->smarty->display('homeLogged.tpl');
     }
 
     public function mostrarProductos($productos,$categorias)

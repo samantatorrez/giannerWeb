@@ -1,5 +1,5 @@
 
-    {include 'headerLogged.tpl'}
+    {include 'header.tpl'}
 
     <div id="contenido">
       <div class="container-fluid precios">
@@ -35,6 +35,7 @@
             </div>
           </div>
           <hr>
+
           <div class="categorias col-sm-12 col-md-12">
             <h2>🌺Categorias🌺</h2>
             <table id="tablaCategorias" class="table">
@@ -55,13 +56,12 @@
               </tbody>
             </table>
           </div>
-
           <div class="col-sm-12 col-md-12 form-group">
             <div id="mensajeCategorias">
             </div>
             <form id="formularioCategoria" action="agregarCategoria" method="post">
               <div class="form-group">
-                <label for="nombre">Id:</label>
+                <label for="id">Id:</label>
                 <input type="text" name="id" class="form-control" readonly>
               </div>
               <div class="form-group">
@@ -71,6 +71,28 @@
               <button type="submit" class="btn btn-default">Subir</button>
               <button type="button" class="btn cancelar btn-default">Cancelar</button>
             </form>
+          </div>
+
+          <div class="usuarios col-sm-12 col-md-12">
+            <h2>🌺Usuarios🌺</h2>
+            <table id="tablaUsuarios" class="table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Username</th>
+                  <th>Role</th>
+                </tr>
+              </thead>
+              <tbody>
+                {foreach from=$usuarios item=usuario}
+                  {include 'usuario.tpl'}
+                {/foreach}
+              </tbody>
+            </table>
+          </div>
+          <div class="col-sm-12 col-md-12 form-group">
+            <div id="mensajeUsuarios">
+            </div>
           </div>
           </div>
       </div>

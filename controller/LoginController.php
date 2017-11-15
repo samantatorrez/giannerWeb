@@ -35,7 +35,7 @@
             die();
           } elseif ($user['role'] == 0) {
             $this->session($userName);
-            header('Location: '.HOMELOGGED);
+            header('Location: '.HOME);
             die();
           } else {
             $this->view->mostrarError('usted no tiene permiso para ingresar',false);
@@ -63,7 +63,7 @@
             $role = 0;
             $user = $this->model->addUsuario($userName,$password,$role);
             $this->session($userName);
-            header('Location: '.HOMELOGGED);
+            header('Location: '.HOME);
           } catch (Exception $e){
             $this->view->mostrarError('Error al dar el alta.',true);
             error_log( $e->getMessage());
@@ -72,6 +72,26 @@
           $this->view->mostrarError('Usuario o Password incorrectos.',true);
         }
       }
+
+    public function obtenerUsuarios(){
+      try {
+        $this->model->getUsuarios();
+        $this->view->mostrarUsuarios();
+      } catch (Exception $e) {
+        $this->errorHandler($e->getMessage());
+        error_log( $e->getMessage());
+      }
+    }
+
+    public function eliminarUsuario($params){
+      try {
+        $id=$params[0];
+        $this->model->borrarUsuario($id);
+      } catch (Exception $e) {
+        $this->errorHandler("Error al borrar Usuario.");
+        error_log( $e->getMessage());
+      }
+    }
 
     public function mostrarSignUp(){
       $this->view->mostrarFormulario(true);
