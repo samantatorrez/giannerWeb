@@ -43,14 +43,14 @@
     }
   }
 
-  private function sonJPG($imagenesTipos)
-  {
-    foreach ($imagenesTipos as $tipo){
-      if($tipo != 'image/jpeg')
-        return false;
-    }
-    return true;
-  }
+  // private function sonJPG($imagenesTipos)
+  // {
+  //   foreach ($imagenesTipos as $tipo){
+  //     if($tipo != 'image/jpeg')
+  //       return false;
+  //   }
+  //   return true;
+  // }
 
   public function agregarProducto(){
     try {
@@ -73,8 +73,11 @@
       $precio = isset($_POST['precio']) ? $_POST['precio'] : 0;
 
       $id_producto = $this->productModel->agregarProducto($nombre,$descripcion,$medidas,$precio,$id_categoria,$rutaTempImagenes);
-      $producto = $this->productModel->obtenerProducto($id_producto);
-      $this->view->obtenerFilaProducto($producto);
+      // $producto = $this->productModel->obtenerProducto($id_producto);
+      // $categoria = $this->categoryModel->obtenerCategoria($producto['id_categoria']);
+      $productoCat = $this->productModel->obtenerProductoConNombreCategoria($id_producto);
+
+      $this->view->obtenerFilaProducto($productoCat);
 
     } catch (ParameterRequiredException $e){
       $this->errorHandler($e->getMessage());
@@ -269,6 +272,6 @@
     }
   }
 
-}
+  }
 
 ?>
