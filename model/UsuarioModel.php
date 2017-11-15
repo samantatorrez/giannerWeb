@@ -1,5 +1,5 @@
 <?php
-  include_once 'DBModel.php';
+  require_once 'DBModel.php';
 
   class LoginModel extends DBModel
   {

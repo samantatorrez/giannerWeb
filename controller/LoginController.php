@@ -1,6 +1,6 @@
 <?php
-  include_once 'model/UsuarioModel.php';
-  include_once 'view/LoginView.php';
+  require_once 'model/UsuarioModel.php';
+  require_once 'view/LoginView.php';
 
   class LoginController extends Controller
   {

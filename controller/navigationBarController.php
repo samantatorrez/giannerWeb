@@ -1,7 +1,7 @@
 <?php
-  include_once 'model/ProductModel.php';
-  include_once 'model/CategoryModel.php';
-  include_once 'view/NavigationBarView.php';
+  require_once 'model/ProductModel.php';
+  require_once 'model/CategoryModel.php';
+  require_once 'view/NavigationBarView.php';
 
   class NavigationBarController extends Controller
   {
@@ -58,6 +58,34 @@
     {
       $this->view->mostrarContactos();
     }
+
+    public function filtrarProductos()
+    {
+      $this->productModel = new ProductModel();
+      $categoria = $_GET['valCategoria'];
+      if ($categoria === 'Todas') {
+        $productos = $this->productModel->obtenerProductos();
+        $this->view->mostrarxCategoria($productos);
+      }
+      else
+      {
+        $productosFiltrados = $this->productModel->filtrarxCategoria($categoria);
+        if (!empty($productosFiltrados)) {
+          $this->view->mostrarxCategoria($productosFiltrados);
+        }
+        else{
+          echo "No hay productos que sean de esta categoria.";
+        }
+      }
+
+      // try {
+      //
+      // } catch (Exception $e) {
+      //   $this->errorHandler("No hay productos que sean de esa categoria.");
+      //   error_log( $e->getMessage());
+      // }
+    }
+
   }
 
 ?>

@@ -8,6 +8,8 @@
       'producto' => 'NavigationBarController#mostrarProductos',
       'contacto' => 'NavigationBarController#mostrarContactos',
 
+      'listarXCategoria' => 'NavigationBarController#filtrarProductos',
+
       'admin' => 'AdminController#mostrarAdmin',
       'agregarProducto' => 'AdminController#agregarProducto',
       'borrarProducto' => 'AdminController#borrarProducto',
