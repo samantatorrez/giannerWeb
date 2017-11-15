@@ -31,6 +31,8 @@
 
     public function obtenerFilaProducto($product)
     {
+      $agregar = true;
+      $this->smarty->assign('agregar', $agregar);
       $this->smarty->assign('product', $product);
       $this->smarty->display('productRow.tpl');
     }
@@ -56,6 +58,8 @@
 
     public function mostrarAdmin($productos, $categorias)
     {
+      $agregar = false;
+      $this->smarty->assign('agregar', $agregar);
       $this->smarty->assign('productos', $productos);
       $this->smarty->assign('categorias', $categorias);
       $this->smarty->display('admin.tpl');

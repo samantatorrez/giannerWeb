@@ -17,7 +17,7 @@
       <label for="id_categoria">Categoria:</label>
       <select name="id_categoria" class="form-control">
         {foreach from=$categorias item=categoria}
-        <option value= {$categoria['id']} {if $categoria['id'] eq $product['id_categoria']}selected{/if}>{$categoria['nombre']}</option>
+          <option value= {$categoria['id']} {if $categoria['id'] eq $product['id_categoria']}selected{/if}>{$categoria['nombre']}</option>
         {/foreach}
       </select>
     </div>
@@ -27,9 +27,12 @@
     </div>
     <div class="form-group">
       <label for="imagen">Imagen</label>
-      <div class="slide">
+      <div id="editImages">
         {foreach from=$product['imagenes'] item=imagen}
-          <img src="{$imagen['ruta']}" alt="producto" class="img-responsive img-rounded">
+          <div class="slide">
+            <img src="{$imagen['ruta']}" alt="producto" class="img-responsive img-rounded">
+            <button id="borrarImagen" type="button" data-id= {$imagen['id']} class="btn btn-danger">Borrar Imagen</button>
+          </div>
         {/foreach}
       </div>
       <input type="file" id="imagenes" name="imagenes[]" multiple>

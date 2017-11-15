@@ -19,6 +19,7 @@
       'agregarCategoria' => 'AdminController#agregarCategoria',
       'editarCategoria' => 'AdminController#editarCategoria',
       'borrarCategoria' => 'AdminController#borrarCategoria',
+      'borrarImagen' => 'AdminController#borrarImagen',
       'obtenerFormularioEditarCategoria' => 'AdminController#obtenerFormularioEditarCategoria',
 
       'mostrarRegistrar' => 'LoginController#mostrarRegistrar',

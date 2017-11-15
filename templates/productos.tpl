@@ -19,6 +19,7 @@
         <table class="table">
           <thead>
             <tr>
+              <th>IMAGEN/ES</th>
               <th>NOMBRE</th>
               <th>DECRIPCION</th>
               <th>MEDIDAS</th>

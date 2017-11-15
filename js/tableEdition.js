@@ -4,6 +4,7 @@ $( document ).ready(function() {
   const ADD_ACTION_PRODUCT= "agregarProducto";
   const DELETE_PRODUCT_URI= "/giannerWeb/borrarProducto/";
   const DELETE_CATEGORY_URI= "/giannerWeb/borrarCategoria/";
+  const DELETE_IMAGES_URI= "/giannerWeb/borrarImagen/";
   const GET_ADD_PRODUCT_FORM_URI= "/giannerWeb/obtenerFormularioAgregarProducto";
   const GET_EDIT_PRODUCT_FORM_URI= "/giannerWeb/obtenerFormularioEditarProducto/";
   const ROW_TEMPLATE = "<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td><td><button data-id=\"{0}\"type=\"button\"class=\"btn btn-danger\">Borrar</button></td></tr><tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td><td><button data-id=\"{0}\"type=\"button\"class=\"btn btn-default\">Editar</button></td></tr>";
@@ -90,6 +91,32 @@ $( document ).ready(function() {
     })
   }
 
+  function borrarImg(dataId, mensaje, tabla, url, formulario, cerrarProductos) {
+    $.ajax({
+      url: url,
+      type: "DELETE",
+      success : function(resultData) {
+        if($(resultData).hasClass("alert-danger")){ // si es mensaje de error
+          $(mensaje).html(resultData);
+        } else {
+          alert(dataId);
+          console.log(tabla);
+          $(tabla).find('[data-id='+dataId+']').parent().remove();
+          if(cerrarProductos){
+            let submitBtn =$(formulario).find(":submit");
+            //Si esta abierto algun formulario de producto lo cierra
+            if (submitBtn.length){
+              quitarFormularioProductos();
+            }
+          }
+        }
+      },
+      error: function(jqxml, status, errorThrown){
+         console.log(errorThrown);
+      }
+    })
+  }
+
   //BORRA un producto
   $("#tablaProductos").on('click','.btn-danger',function(event) {
     event.preventDefault();
@@ -97,12 +124,19 @@ $( document ).ready(function() {
     let url = DELETE_PRODUCT_URI + dataId;
     borrar(dataId, "#mensajeProductos","#tablaProductos", url , "#formularioProducto", true);
   });
-  //BORRA un producto
+  //BORRA una categoria
   $("#tablaCategorias").on('click','.btn-danger',function(event) {
     event.preventDefault();
     let dataId =  $(this).data("id");
     let url = DELETE_CATEGORY_URI + dataId;
     borrar(dataId, "#mensajeCategorias", "#tablaCategorias", url , "#formularioCategoria", false);
+  });
+  //BORRA una imagen
+  $("#formularioProducto").on('click','.btn-danger',function(event) {
+    event.preventDefault();
+    let dataId =  $(this).data("id");
+    let url = DELETE_IMAGES_URI + dataId;
+    borrarImg(dataId, "#mensajeProductos", "#editImages", url , "#formularioProducto", false);
   });
 
   //Muestra el formulario de productos para ser agregados

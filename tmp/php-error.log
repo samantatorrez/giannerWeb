@@ -16,3 +16,394 @@
 [15-Nov-2017 19:13:48 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\model\ProductModel.php on line 138
 [15-Nov-2017 19:13:48 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\04c56d8cf13f5cf0a84e266fd2852d2c5003d87f_0.file.home.tpl.php on line 41
 [15-Nov-2017 19:13:48 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\04c56d8cf13f5cf0a84e266fd2852d2c5003d87f_0.file.home.tpl.php on line 42
+[15-Nov-2017 19:59:59 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 20:00:00 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 42
+[15-Nov-2017 20:00:00 Europe/Berlin] PHP Notice:  Undefined index: medidas in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 44
+[15-Nov-2017 20:00:00 Europe/Berlin] PHP Notice:  Undefined index: precio in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 46
+[15-Nov-2017 20:00:00 Europe/Berlin] PHP Notice:  Undefined index: id_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 20:00:00 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 20:00:00 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 20:00:00 Europe/Berlin] PHP Notice:  Undefined index: descripcion in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 65
+[15-Nov-2017 20:00:00 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 67
+[15-Nov-2017 20:00:00 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 69
+[15-Nov-2017 20:07:22 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 20:07:22 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 42
+[15-Nov-2017 20:07:22 Europe/Berlin] PHP Notice:  Undefined index: medidas in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 44
+[15-Nov-2017 20:07:22 Europe/Berlin] PHP Notice:  Undefined index: precio in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 46
+[15-Nov-2017 20:07:22 Europe/Berlin] PHP Notice:  Undefined index: id_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 20:07:22 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 20:07:22 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 20:07:22 Europe/Berlin] PHP Notice:  Undefined index: descripcion in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 65
+[15-Nov-2017 20:07:22 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 67
+[15-Nov-2017 20:07:22 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 69
+[15-Nov-2017 20:10:46 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 20:10:46 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 42
+[15-Nov-2017 20:10:46 Europe/Berlin] PHP Notice:  Undefined index: medidas in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 44
+[15-Nov-2017 20:10:46 Europe/Berlin] PHP Notice:  Undefined index: precio in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 46
+[15-Nov-2017 20:10:46 Europe/Berlin] PHP Notice:  Undefined index: id_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 20:10:46 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 20:10:46 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 20:10:46 Europe/Berlin] PHP Notice:  Undefined index: descripcion in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 65
+[15-Nov-2017 20:10:46 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 67
+[15-Nov-2017 20:10:46 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 69
+[15-Nov-2017 20:15:14 Europe/Berlin] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\giannerWeb\model\DBModel.php on line 30
+[15-Nov-2017 20:19:25 Europe/Berlin] SQLSTATE[HY000] [1049] Unknown database 'gianner_web_db'
+[15-Nov-2017 20:21:47 Europe/Berlin] SQLSTATE[HY000] [1049] Unknown database 'gianner_web_db'
+[15-Nov-2017 20:24:01 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 20:24:01 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 42
+[15-Nov-2017 20:24:01 Europe/Berlin] PHP Notice:  Undefined index: medidas in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 44
+[15-Nov-2017 20:24:01 Europe/Berlin] PHP Notice:  Undefined index: precio in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 46
+[15-Nov-2017 20:24:01 Europe/Berlin] PHP Notice:  Undefined index: id_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 20:24:01 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 20:24:01 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 20:24:01 Europe/Berlin] PHP Notice:  Undefined index: descripcion in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 65
+[15-Nov-2017 20:24:01 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 67
+[15-Nov-2017 20:24:01 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 69
+[15-Nov-2017 20:31:41 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 20:31:41 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 42
+[15-Nov-2017 20:31:42 Europe/Berlin] PHP Notice:  Undefined index: medidas in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 44
+[15-Nov-2017 20:31:42 Europe/Berlin] PHP Notice:  Undefined index: precio in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 46
+[15-Nov-2017 20:31:42 Europe/Berlin] PHP Notice:  Undefined index: id_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 20:31:42 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 20:31:42 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 20:31:42 Europe/Berlin] PHP Notice:  Undefined index: descripcion in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 65
+[15-Nov-2017 20:31:42 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 67
+[15-Nov-2017 20:31:42 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 69
+[15-Nov-2017 22:22:35 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 22:22:35 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 42
+[15-Nov-2017 22:22:35 Europe/Berlin] PHP Notice:  Undefined index: medidas in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 44
+[15-Nov-2017 22:22:35 Europe/Berlin] PHP Notice:  Undefined index: precio in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 46
+[15-Nov-2017 22:22:35 Europe/Berlin] PHP Notice:  Undefined index: id_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:22:35 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 22:22:35 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 22:22:35 Europe/Berlin] PHP Notice:  Undefined index: descripcion in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 65
+[15-Nov-2017 22:22:35 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 67
+[15-Nov-2017 22:22:35 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 69
+[15-Nov-2017 22:32:57 Europe/Berlin] PHP Notice:  Array to string conversion in C:\xampp\htdocs\giannerWeb\view\AdminView.php on line 35
+[15-Nov-2017 22:34:11 Europe/Berlin] PHP Notice:  Array to string conversion in C:\xampp\htdocs\giannerWeb\view\AdminView.php on line 35
+[15-Nov-2017 22:35:02 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 33
+[15-Nov-2017 22:35:02 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 42
+[15-Nov-2017 22:35:02 Europe/Berlin] PHP Notice:  Undefined index: medidas in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 44
+[15-Nov-2017 22:35:02 Europe/Berlin] PHP Notice:  Undefined index: precio in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 46
+[15-Nov-2017 22:35:02 Europe/Berlin] PHP Notice:  Undefined index: id_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:35:02 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 22:35:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 22:35:02 Europe/Berlin] PHP Notice:  Undefined index: descripcion in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 65
+[15-Nov-2017 22:35:02 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 67
+[15-Nov-2017 22:35:02 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 69
+[15-Nov-2017 22:40:00 Europe/Berlin] PHP Notice:  Undefined index: medidas in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 44
+[15-Nov-2017 22:40:00 Europe/Berlin] PHP Notice:  Undefined index: precio in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 46
+[15-Nov-2017 22:40:00 Europe/Berlin] PHP Notice:  Undefined index: id_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:40:00 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 22:40:00 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 22:40:00 Europe/Berlin] PHP Notice:  Undefined index: descripcion in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 65
+[15-Nov-2017 22:40:00 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 67
+[15-Nov-2017 22:40:00 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 69
+[15-Nov-2017 22:45:38 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 33
+[15-Nov-2017 22:45:38 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 33
+[15-Nov-2017 22:45:38 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 33
+[15-Nov-2017 22:45:38 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 42
+[15-Nov-2017 22:45:38 Europe/Berlin] PHP Notice:  Undefined index: medidas in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 44
+[15-Nov-2017 22:45:38 Europe/Berlin] PHP Notice:  Undefined index: precio in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 46
+[15-Nov-2017 22:45:38 Europe/Berlin] PHP Notice:  Undefined index: id_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:45:38 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 22:45:38 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 22:45:38 Europe/Berlin] PHP Notice:  Undefined index: descripcion in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 65
+[15-Nov-2017 22:45:38 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 67
+[15-Nov-2017 22:45:38 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 69
+[15-Nov-2017 22:51:17 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 22:51:17 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 22:52:03 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 22:52:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 51
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 22:55:17 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:01:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:03:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:19 Europe/Berlin] PHP Fatal error:  Call to undefined method AdminController::errorHandler() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 153
+[15-Nov-2017 23:05:22 Europe/Berlin] PHP Fatal error:  Call to undefined method AdminController::errorHandler() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 153
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:29 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:05:56 Europe/Berlin] PHP Fatal error:  Call to undefined method AdminController::errorHandler() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 153
+[15-Nov-2017 23:05:56 Europe/Berlin] PHP Fatal error:  Call to undefined method AdminController::errorHandler() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 153
+[15-Nov-2017 23:05:57 Europe/Berlin] PHP Fatal error:  Call to undefined method AdminController::errorHandler() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 153
+[15-Nov-2017 23:05:57 Europe/Berlin] PHP Fatal error:  Call to undefined method AdminController::errorHandler() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 153
+[15-Nov-2017 23:05:57 Europe/Berlin] PHP Fatal error:  Call to undefined method AdminController::errorHandler() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 153
+[15-Nov-2017 23:05:57 Europe/Berlin] PHP Fatal error:  Call to undefined method AdminController::errorHandler() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 153
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:39 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:07:53 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:08:19 Europe/Berlin] PHP Fatal error:  Call to undefined method AdminController::errorHandler() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 94
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:13:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:10 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:10 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:10 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:10 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:10 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:10 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:10 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:10 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:10 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:10 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:10 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:10 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:11 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:11 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:11 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:11 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:11 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:14:48 Europe/Berlin] PHP Notice:  Undefined variable: agregar in C:\xampp\htdocs\giannerWeb\view\AdminView.php on line 62
+[15-Nov-2017 23:15:40 Europe/Berlin] PHP Notice:  Undefined variable: agregar in C:\xampp\htdocs\giannerWeb\view\AdminView.php on line 62
+[15-Nov-2017 23:19:59 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\model\ProductModel.php on line 153
+[15-Nov-2017 23:19:59 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\04c56d8cf13f5cf0a84e266fd2852d2c5003d87f_0.file.home.tpl.php on line 41
+[15-Nov-2017 23:19:59 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\04c56d8cf13f5cf0a84e266fd2852d2c5003d87f_0.file.home.tpl.php on line 42
+[15-Nov-2017 23:21:11 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\model\ProductModel.php on line 153
+[15-Nov-2017 23:21:11 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\04c56d8cf13f5cf0a84e266fd2852d2c5003d87f_0.file.home.tpl.php on line 41
+[15-Nov-2017 23:21:11 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\04c56d8cf13f5cf0a84e266fd2852d2c5003d87f_0.file.home.tpl.php on line 42
+[15-Nov-2017 23:21:27 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\04c56d8cf13f5cf0a84e266fd2852d2c5003d87f_0.file.home.tpl.php on line 41
+[15-Nov-2017 23:21:27 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\04c56d8cf13f5cf0a84e266fd2852d2c5003d87f_0.file.home.tpl.php on line 42
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: imagenes in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 28
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: nombre in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 42
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: medidas in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 44
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: precio in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 46
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 48
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: agregar in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 50
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 55
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: descripcion in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 70
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 72
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 74
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Undefined index: categorias in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 87
+[15-Nov-2017 23:21:33 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\giannerWeb\templates_c\236a5af7811edd8752b5c6c0c89a7c3d7e0bdc78_0.file.admin.tpl.php on line 87
+[15-Nov-2017 23:23:00 Europe/Berlin] PHP Notice:  Undefined variable: agregar in C:\xampp\htdocs\giannerWeb\view\AdminView.php on line 62
+[15-Nov-2017 23:24:30 Europe/Berlin] PHP Notice:  Undefined variable: agregar in C:\xampp\htdocs\giannerWeb\view\AdminView.php on line 62
+[15-Nov-2017 23:25:33 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:25:33 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:25:33 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:25:33 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:25:33 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:25:33 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:25:33 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:25:33 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:25:33 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:25:33 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:25:33 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:28:03 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:28:03 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:28:03 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:28:03 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:28:03 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:28:03 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:28:03 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:28:03 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:28:03 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:28:04 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[15-Nov-2017 23:28:04 Europe/Berlin] PHP Notice:  Undefined index: nombre_categoria in C:\xampp\htdocs\giannerWeb\templates_c\a424c1eeea236bb690f9afe6d5718af5ffe3c55d_0.file.productRow.tpl.php on line 49
+[16-Nov-2017 00:05:55 Europe/Berlin] PHP Fatal error:  Call to undefined method AdminController::errorHandler() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 127
+[16-Nov-2017 00:14:39 Europe/Berlin] PHP Fatal error:  Call to undefined method AdminController::errorHandler() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 127
+[16-Nov-2017 00:34:31 Europe/Berlin] PHP Fatal error:  Call to undefined method AdminController::errorHandler() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 127
+[16-Nov-2017 00:42:06 Europe/Berlin] PHP Fatal error:  Call to undefined method AdminController::errorHandler() in C:\xampp\htdocs\giannerWeb\controller\AdminController.php on line 128

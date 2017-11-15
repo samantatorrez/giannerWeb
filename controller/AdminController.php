@@ -122,7 +122,8 @@
 
       $producto = $this->productModel
                   ->editarProducto($id,$nombre,$descripcion,$medidas,$precio,$id_categoria);
-      $this->view->obtenerFilaProducto($producto);
+      $productoCat = $this->productModel->obtenerProductoConNombreCategoria($id_producto);
+      $this->view->obtenerFilaProducto($productoCat);
     } catch (ParameterRequiredException $e){
       $this->errorHandler($e->getMessage());
     } catch (DataBaseException $e){
@@ -181,6 +182,19 @@
       $this->errorHandler($e->getMessage());
     } catch (Exception $e) {
       $this->errorHandler("Error al borrar Categoria.");
+      error_log( $e->getMessage());
+    }
+  }
+
+  public function borrarImagen($params)
+  {
+    try {
+      $id=$params[0];
+      $this->productModel->deleteImgById($id);
+    } catch (DataBaseException $e){
+      $this->errorHandler($e->getMessage());
+    } catch (Exception $e) {
+      $this->errorHandler("Error al borrar la imagen.");
       error_log( $e->getMessage());
     }
   }
