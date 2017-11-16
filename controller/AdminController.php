@@ -203,7 +203,8 @@
       $this->errorHandler($e->getMessage());
     } catch (Exception $e) {
       $this->errorHandler("Error al borrar Categoria.");
-      
+    }
+  }
   public function borrarImagen($params)
   {
     try {
