@@ -1,6 +1,4 @@
-
-
-    {include 'header.tpl'}
+{include 'header.tpl'}
 <div id="contenido">
   <div class="container-fluid precios">
     <div class="blackFriday">
@@ -98,5 +96,4 @@
         <script src="js/tableEdition.js"></script>
       </div>
 </div>
-
-    {include 'footer.tpl'}
+{include 'footer.tpl'}

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-  $(document).on("click","#btnlogout",function(e){
-    e.preventDefault();
+  $(document).on("click","#btnlogout",function(event){
+    event.preventDefault();
     cerrarSesion() ;
   });
 
@@ -18,4 +18,5 @@ $(document).ready(function(){
         alert('Error al cerrar sesion.');
       },
     });
+    event.preventDefault();
   }

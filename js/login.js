@@ -32,6 +32,7 @@ $(document).ready(function (){
 					alert("error al iniciar sesion");
 				},
 			});
+			event.preventDefault();
 	}
 
    function loguearse() {

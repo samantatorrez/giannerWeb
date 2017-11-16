@@ -1,6 +1,7 @@
 $(document).ready(function(){
   let templateComentarios;
   const COMMENTS_API= "/giannerWeb/api/comments/";
+  const IMAGEN_LOADER="<div class=\"text-center\"><img src=\"images\/loader.gif\"  alt=\"loader\"><\/div>";
   $.ajax({
       url: 'js/template.mst'
   }).done(template => templateComentarios = template);
@@ -17,8 +18,7 @@ $(document).ready(function(){
         type: "GET",
         dataType : "json",
         success : function(data, textStatus) {
-          obtenerComentarios(data["param"], nameId, dataId,data["admin"],data["logged"]);
-          //setTimeout(refresh(dataId,nameId),20000);
+          obtenerComentarios(data["param"],nameId,dataId,data["admin"],data["logged"]);
         },
         error: function(jqxml, status, errorThrown){
           console.log(errorThrown);
