@@ -104,7 +104,7 @@
       }
     }
 
-    function editarProducto($id,$nombre,$descripcion,$medidas,$precio,$id_categoria)
+    function editarProducto($id,$nombre,$descripcion,$medidas,$precio,$id_categoria,$imagenes)
     {
       $sql = 'UPDATE producto SET nombre=:nombre , descripcion=:descripcion ,
       medidas=:medidas , precio=:precio , id_categoria=:id_categoria WHERE
@@ -116,17 +116,15 @@
                                   ":medidas"=>$medidas,
                                   ":precio"=>$precio,
                                   ":id_categoria"=>$id_categoria));
-      $producto = array('id' => $id,
-                    'nombre' => $nombre,
-                    'descripcion'=> $descripcion,
-                    'medidas'=> $medidas,
-                    'precio' => $precio,
-                    'id_categoria' => $id_categoria );
+      // $producto = array('id' => $id,
+      //               'nombre' => $nombre,
+      //               'descripcion'=> $descripcion,
+      //               'medidas'=> $medidas,
+      //               'precio' => $precio,
+      //               'id_categoria' => $id_categoria );
 
-    if($sentencia->rowCount()==0){
-      throw new DataBaseException("Error no es posible editar este producto.");
-    }
-    return $producto;
+
+      // return $producto;
     }
 
     public function filtrarxCategoria($categoria)

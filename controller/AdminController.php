@@ -121,6 +121,8 @@
         throw new ParameterRequiredException("Parametro obligatorio: categoria");
       }
 
+      $rutaTempImagenes = $_FILES['imagenes']['tmp_name'];
+
       $id= $_POST['id'];
       $nombre = $_POST['nombre'];
       $id_categoria = $_POST['id_categoria'];
@@ -128,9 +130,8 @@
       $medidas = $_POST['medidas'];
       $precio = isset($_POST['precio']) ? $_POST['precio'] : 0;
 
-      $producto = $this->productModel
-                  ->editarProducto($id,$nombre,$descripcion,$medidas,$precio,$id_categoria);
-      $productoCat = $this->productModel->obtenerProductoConNombreCategoria($id_producto);
+      $this->productModel->editarProducto($id,$nombre,$descripcion,$medidas,$precio,$id_categoria,$rutaTempImagenes);
+      $productoCat = $this->productModel->obtenerProductoConNombreCategoria($id);
       $this->view->obtenerFilaProducto($productoCat);
     } catch (ParameterRequiredException $e){
       $this->errorHandler($e->getMessage());
