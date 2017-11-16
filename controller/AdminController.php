@@ -130,7 +130,7 @@
 
       $producto = $this->productModel
                   ->editarProducto($id,$nombre,$descripcion,$medidas,$precio,$id_categoria);
-      $productoCat = $this->productModel->obtenerProductoConNombreCategoria($id_producto);
+      $productoCat = $this->productModel->obtenerProductoConNombreCategoria($id);
       $this->view->obtenerFilaProducto($productoCat);
     } catch (ParameterRequiredException $e){
       $this->errorHandler($e->getMessage());
