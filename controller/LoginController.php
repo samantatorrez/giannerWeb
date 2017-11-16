@@ -3,20 +3,28 @@
   include_once(dirname(__DIR__).'/model/UsuarioModel.php');
   include_once(dirname(__DIR__).'/controller/Controller.php');
   include_once(dirname(__DIR__).'/controller/NavigationBarController.php');
+  include_once(dirname(__DIR__).'/controller/SecuredController.php');
   include_once(dirname(__DIR__).'/view/LoginView.php');
 
-  class LoginController extends Controller
+  class LoginController extends SecuredController
   {
 
     function __construct()
     {
+      parent::__construct();
       $this->view = new LoginView();
       $this->model = new LoginModel();
     }
 
     public function mostrarLogin()
     {
-      $this->view->mostrarFormulario();
+      $this->view->mostrarFormulario(false);
+    }
+
+    private function session($username){
+      session_start();
+      $_SESSION['usuario'] = $username;
+      $_SESSION['LAST_ACTIVITY'] = time();
     }
 
     public function usuarioLogueado(){
@@ -38,34 +46,24 @@
         $userName = $_POST['usuario'];
         $password = $_POST['password'];
         $user = $this->model->getUsuario($userName);
-        print_r($user);
-        die();
-        if((!empty($user)) && password_verify($password, $user['password'])) {
 
-          // session_start();
-          // $_SESSION['usuario'] = $userName;
-          // $_SESSION['LAST_ACTIVITY'] = time();
-          // // header('Location: '.ADMIN);
-          // if ($user['role'] == 1) {
-          //   header('Location: '.ADMIN);
-          // }
-          // else {
-          //   header('Location: '.HOME);
-          // }
-          if ($user['role'] == 1) {
-            session_start();
-            $_SESSION['usuario'] = $userName;
-            $_SESSION['LAST_ACTIVITY'] = time();
+        if((!empty($user)) && password_verify($password, $user['password'])) {
+          if ($user['role'] == 1){
+            $this->session($userName);
             header('Location: '.ADMIN);
+            die();
+          } elseif ($user['role'] == 0) {
+            $this->session($userName);
+            header('Location: '.HOME);
+            die();
+          } else {
+            $this->view->mostrarError('usted no tiene permiso para ingresar',false);
           }
-          else{
-            $this->view->mostrarFormulario('Usted no tiene permiso para ingresar a modo administrador.');
-          }
+        } else {
+          $this->view->mostrarError('Usuario o Password incorrectos.',false);
         }
-        else{
-          // header('Location: '.LOGIN);
-          $this->view->mostrarFormulario('Usuario o Password incorrectos.');
-        }
+      } else {
+          $this->view->mostrarError('Usuario o Password vacios.',false);
       }
     }
 
@@ -74,6 +72,48 @@
       session_start();
       session_destroy();
       header('Location: '.HOME);
+    }
+
+    public function agregarUsuario(){
+      if(!empty($_POST['usuario']) && !empty($_POST['password'])){
+          try{
+            $userName = $_POST['usuario'];
+            $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+            $role = 0;
+            $user = $this->model->addUsuario($userName,$password,$role);
+            $this->session($userName);
+            header('Location: '.HOME);
+          } catch (Exception $e){
+            $this->view->mostrarError('Error al dar el alta.',true);
+            error_log( $e->getMessage());
+          }
+        } else {
+          $this->view->mostrarError('Usuario o Password incorrectos.',true);
+        }
+      }
+
+    public function obtenerUsuarios(){
+      try {
+        $this->model->getUsuarios();
+        $this->view->mostrarUsuarios();
+      } catch (Exception $e) {
+        $this->errorHandler($e->getMessage());
+        error_log( $e->getMessage());
+      }
+    }
+
+    public function eliminarUsuario($params){
+      try {
+        $id=$params[0];
+        $this->model->borrarUsuario($id);
+      } catch (Exception $e) {
+        $this->errorHandler("Error al borrar Usuario.");
+        error_log( $e->getMessage());
+      }
+    }
+
+    public function mostrarSignUp(){
+      $this->view->mostrarFormulario(true);
     }
 
   }

@@ -19,14 +19,23 @@
       'agregarCategoria' => 'AdminController#agregarCategoria',
       'editarCategoria' => 'AdminController#editarCategoria',
       'borrarCategoria' => 'AdminController#borrarCategoria',
+
+      'borrarUsuario' => 'AdminController#borrarUsuario',
+      'agregarAdmin' => 'AdminController#agregarAdmin',
+      'quitarAdmin' => 'AdminController#quitarAdmin',
       'borrarImagen' => 'AdminController#borrarImagen',
+
       'obtenerFormularioEditarCategoria' => 'AdminController#obtenerFormularioEditarCategoria',
 
       'mostrarRegistrar' => 'LoginController#mostrarRegistrar',
 
       'login' => 'LoginController#mostrarLogin',
       'verificarUsuario' => 'LoginController#verificar',
-      'logout' => 'LoginController#cerrar'
+      'signup' => 'LoginController#mostrarSignUp',
+      'agregarUsuario' => 'LoginController#agregarUsuario',
+      'logout' => 'LoginController#cerrar',
+
+
     ];
   }
  ?>

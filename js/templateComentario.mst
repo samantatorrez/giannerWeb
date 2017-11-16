@@ -1,0 +1,7 @@
+{{#arreglo}}
+<tr>
+  <td>{{puntaje}}</td>
+  <td>{{comentario}}</td>
+  <td><button data-id= {{id}} type="button" class="btn btn-danger">Borrar</button></td>
+</tr>
+{{/arreglo}}

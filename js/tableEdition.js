@@ -4,7 +4,12 @@ $( document ).ready(function() {
   const ADD_ACTION_PRODUCT= "agregarProducto";
   const DELETE_PRODUCT_URI= "/giannerWeb/borrarProducto/";
   const DELETE_CATEGORY_URI= "/giannerWeb/borrarCategoria/";
+
+  const DELETE_USER_URI= "/giannerWeb/borrarUsuario/";
+  const DELETE_USER_ROLE_URI = "/giannerWeb/quitarAdmin/";
+  const ADD_USER_ROLE_URI = "/giannerWeb/agregarAdmin/";
   const DELETE_IMAGES_URI= "/giannerWeb/borrarImagen/";
+
   const GET_ADD_PRODUCT_FORM_URI= "/giannerWeb/obtenerFormularioAgregarProducto";
   const GET_EDIT_PRODUCT_FORM_URI= "/giannerWeb/obtenerFormularioEditarProducto/";
   const ROW_TEMPLATE = "<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td><td><button data-id=\"{0}\"type=\"button\"class=\"btn btn-danger\">Borrar</button></td></tr><tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td><td><button data-id=\"{0}\"type=\"button\"class=\"btn btn-default\">Editar</button></td></tr>";
@@ -45,6 +50,7 @@ $( document ).ready(function() {
       data : form_data,
       // dataType : "HTML",
       success : function(resultData) {
+        alert();
         if($(resultData).hasClass("alert-danger")){ // si es mensaje de error
           $("#mensajeProductos").html(resultData);
         } else {
@@ -131,12 +137,56 @@ $( document ).ready(function() {
     let url = DELETE_CATEGORY_URI + dataId;
     borrar(dataId, "#mensajeCategorias", "#tablaCategorias", url , "#formularioCategoria", false);
   });
+ 
+  //BORRA un usuario
+  $("#tablaUsuarios").on('click','.btn-danger',function(event) {
+    event.preventDefault();
+    let dataId =  $(this).data("id");
+    let url = DELETE_USER_URI + dataId;
+    borrar(dataId, "#mensajeUsuarios", "#tablaUsuarios", url , "#formularioUsuarios", false);
+  });
+
+  function editarRole(dataId, mensaje, tabla, url) {
+    $.ajax({
+      url: url,
+      type: "POST",
+      success : function(resultData) {
+        if($(resultData).hasClass("alert-danger")){ // si es mensaje de error
+          $(mensaje).html(resultData);
+        } else {
+          //obtener el id
+          let id = $(resultData).find(".btn-default").data("id");
+          //sobrescribir el tr
+          $("#tablaUsuarios").find('[data-id=' + id+ ']').parent().parent().replaceWith(resultData);
+
+        }
+      },
+      error: function(jqxml, status, errorThrown){
+         console.log(errorThrown);
+      }
+    })
+  }
+  //Quita privilegio a usuario
+  $("#tablaUsuarios").on('click','.deleteAdminRole',function(event) {
+    event.preventDefault();
+    let dataId =  $(this).data("id");
+    let url = DELETE_USER_ROLE_URI + dataId;
+    editarRole(dataId, "#mensajeUsuarios", "#tablaUsuarios", url);
+  });
+  //Agrega privilegio a usuario
+  $("#tablaUsuarios").on('click','.addAdminRole',function(event) {
+    event.preventDefault();
+    let dataId =  $(this).data("id");
+    let url = ADD_USER_ROLE_URI + dataId;
+    editarRole(dataId, "#mensajeUsuarios", "#tablaUsuarios", url);
+
   //BORRA una imagen
   $("#formularioProducto").on('click','.btn-danger',function(event) {
     event.preventDefault();
     let dataId =  $(this).data("id");
     let url = DELETE_IMAGES_URI + dataId;
     borrarImg(dataId, "#mensajeProductos", "#editImages", url , "#formularioProducto", false);
+
   });
 
   //Muestra el formulario de productos para ser agregados

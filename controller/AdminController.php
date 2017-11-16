@@ -4,30 +4,38 @@
  require_once 'view/AdminView.php';
  require_once 'controller/SecuredController.php';
 
- class AdminController
+ class AdminController extends SecuredController
 {
   private $productModel;
   private $categoryModel;
 
   function __construct()
   {
-
+    parent::__construct();
     $this->view = new AdminView();
     try{
+      if (!$this->isAdmin()) {
+        header('Location: '.HOME);
+        die();
+      }
       $this->productModel= new ProductModel();
       $this->categoryModel= new CategoryModel();
+      $this->usuarioModel= new LoginModel();
     } catch (DataBaseException $e){
         $this->errorHandler($e->getMessage());
       throw $e;
     }
   }
 
+
+
   public function mostrarAdmin()
   {
     try {
       $productos= $this->productModel->obtenerProductos();
       $categorias= $this->categoryModel->obtenerCategorias();
-      $this->view->mostrarAdmin($productos,$categorias);
+      $usuarios= $this->usuarioModel->obtenerUsuarios();
+      $this->view->mostrarAdmin($productos,$categorias,$usuarios,$this->getUser());
     } catch (Exception $e){
       $this->errorHandler($e->getMessage());
       error_log( $e->getMessage());
@@ -186,6 +194,16 @@
     }
   }
 
+  public function borrarUsuario($params)
+  {
+    try {
+      $id=$params[0];
+      $this->loginModel->borrarUsuario($id);
+    } catch (DataBaseException $e){
+      $this->errorHandler($e->getMessage());
+    } catch (Exception $e) {
+      $this->errorHandler("Error al borrar Categoria.");
+      
   public function borrarImagen($params)
   {
     try {
@@ -199,6 +217,35 @@
     }
   }
 
+  public function agregarAdmin($params)
+  {
+    try {
+      $id=$params[0];
+      $this->loginModel->updateRole($id,1);
+      $usuario= $this->loginModel->getUserById($id);
+      $this->view->mostrarUsuario($usuario);
+    } catch (DataBaseException $e){
+      $this->errorHandler($e->getMessage());
+    } catch (Exception $e) {
+      $this->errorHandler("Error al borrar Categoria.");
+      error_log( $e->getMessage());
+    }
+  }
+
+  public function quitarAdmin($params)
+  {
+    try {
+      $id=$params[0];
+      $this->loginModel->updateRole($id,0);
+      $usuario= $this->loginModel->getUserById($id);
+      $this->view->mostrarUsuario($usuario);
+    } catch (DataBaseException $e){
+      $this->errorHandler($e->getMessage());
+    } catch (Exception $e) {
+      $this->errorHandler("Error al borrar Categoria.");
+      error_log( $e->getMessage());
+    }
+  }
   //FORMULARIOS
   public function obtenerFormularioAgregarProducto()
   {

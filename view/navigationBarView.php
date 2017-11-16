@@ -4,9 +4,12 @@
   class NavigationBarView extends View
   {
 
-    public function mostrarIndex($productosCategorias)
+    public function mostrarIndex($productosCategorias,$isLogged,$isAdmin,$getUser)
     {
       $this->smarty->assign('productosCategorias', $productosCategorias);
+      $this->smarty->assign('isLogged',$isLogged);
+      $this->smarty->assign('isAdmin',$isAdmin);
+      $this->smarty->assign('getUser', $getUser);
       $this->smarty->display('index.tpl');
     }
 

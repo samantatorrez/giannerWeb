@@ -29,3 +29,4 @@
   <script src="js/logout.js"></script>
   <script src="js/vistaProductos.js"></script>
   <script src="js/partialRender.js"></script>
+  <script src="js/mustache.js"></script>

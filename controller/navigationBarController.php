@@ -5,23 +5,26 @@
   require_once(dirname(__DIR__).'/model/ProductModel.php');
   require_once(dirname(__DIR__).'/model/CategoryModel.php');
   require_once(dirname(__DIR__).'/view/NavigationBarView.php');
+  require_once(dirname(__DIR__).'/controller/SecuredController.php');
 
-  class NavigationBarController extends Controller
+  class NavigationBarController extends SecuredController
   {
     private $productModel;
     private $categoryModel;
 
     public function __construct()
     {
+      parent::__construct();
       $this->view = new NavigationBarView();
+      $this->productModel = new ProductModel();
+      $this->categoryModel = new CategoryModel();
     }
 
     public function mostrarIndex()
     {
       try {
-        $this->productModel = new ProductModel();
         $productosCategorias = $this->productModel->obtenerProductosConNombreCategoria();
-        $this->view->mostrarIndex($productosCategorias);
+        $this->view->mostrarIndex($productosCategorias,$this->isLogged(),$this->isAdmin(),$this->getUser());
       } catch (Exception $e){
         $this->errorHandler($e->getMessage());
         error_log( $e->getMessage());
@@ -32,7 +35,6 @@
     public function mostrarHome()
     {
       try {
-        $this->productModel = new ProductModel();
         $productosCategorias = $this->productModel->obtenerProductosConNombreCategoria();
         $this->view->mostrarHome($productosCategorias);
       } catch (Exception $e){
@@ -45,8 +47,6 @@
     public function mostrarProductos()
     {
       try {
-        $this->productModel = new ProductModel();
-        $this->categoryModel = new CategoryModel();
         $productos = $this->productModel->obtenerProductos();
         $categorias = $this->categoryModel->obtenerCategorias();
         $this->view->mostrarProductos($productos,$categorias);

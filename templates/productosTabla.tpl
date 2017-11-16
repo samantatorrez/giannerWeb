@@ -12,5 +12,7 @@
     <td>{$producto['descripcion']}</td>
     <td>{$producto['medidas']}</td>
     <td>{$producto['precio']}</td>
+    <td><button data-id= {$producto['id']} data-name={$producto['nombre']} type="button" class="btn btn-default">Comentarios</button></td>
+
   </tr>
 {/foreach}
