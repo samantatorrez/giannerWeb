@@ -2,6 +2,10 @@
   <h2 class="text-center">{$productFormAction}</h2>
   {if $isOnEdition}
     <div class="form-group">
+      <label for="nombre">Id:</label>
+      <input type="text" name="id" class="form-control" readonly value={$product['id']}>
+    </div>
+    <div class="form-group">
       <label for="nombre">Nombre:</label>
       <input type="text" name="nombre" class="form-control" value={$product['nombre']}>
     </div>
