@@ -50,7 +50,6 @@ $( document ).ready(function() {
       data : form_data,
       // dataType : "HTML",
       success : function(resultData) {
-        alert();
         if($(resultData).hasClass("alert-danger")){ // si es mensaje de error
           $("#mensajeProductos").html(resultData);
         } else {
@@ -105,8 +104,6 @@ $( document ).ready(function() {
         if($(resultData).hasClass("alert-danger")){ // si es mensaje de error
           $(mensaje).html(resultData);
         } else {
-          alert(dataId);
-          console.log(tabla);
           $(tabla).find('[data-id='+dataId+']').parent().remove();
           if(cerrarProductos){
             let submitBtn =$(formulario).find(":submit");
@@ -137,7 +134,7 @@ $( document ).ready(function() {
     let url = DELETE_CATEGORY_URI + dataId;
     borrar(dataId, "#mensajeCategorias", "#tablaCategorias", url , "#formularioCategoria", false);
   });
- 
+
   //BORRA un usuario
   $("#tablaUsuarios").on('click','.btn-danger',function(event) {
     event.preventDefault();
@@ -179,14 +176,13 @@ $( document ).ready(function() {
     let dataId =  $(this).data("id");
     let url = ADD_USER_ROLE_URI + dataId;
     editarRole(dataId, "#mensajeUsuarios", "#tablaUsuarios", url);
-
+  });
   //BORRA una imagen
   $("#formularioProducto").on('click','.btn-danger',function(event) {
     event.preventDefault();
     let dataId =  $(this).data("id");
     let url = DELETE_IMAGES_URI + dataId;
     borrarImg(dataId, "#mensajeProductos", "#editImages", url , "#formularioProducto", false);
-
   });
 
   //Muestra el formulario de productos para ser agregados
