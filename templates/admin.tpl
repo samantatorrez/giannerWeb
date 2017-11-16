@@ -35,7 +35,6 @@
               </div>
             </div>
             <hr>
-
             <div class="categorias col-sm-12 col-md-12">
               <h2>🌺Categorias🌺</h2>
               <table id="tablaCategorias" class="table">

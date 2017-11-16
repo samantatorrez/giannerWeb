@@ -47,6 +47,20 @@
       return $sentencia->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    private function deleteImagen($id_prd)
+    {
+      $sql = 'DELETE FROM imagen WHERE fk_id_producto=:id';
+      $sentencia = $this->db->prepare($sql);
+      $sentencia->execute(array('id' => $id_prd));
+    }
+
+    public function deleteImgById($id_img)
+    {
+      $sql = 'DELETE FROM imagen WHERE id=:id';
+      $sentencia = $this->db->prepare($sql);
+      $sentencia->execute(array('id' => $id_img));
+    }
+
     private function subirImagenes($imagenes,$nombre){
       $rutas = [];
       $index = 0;
@@ -81,6 +95,7 @@
 
     function borrarProducto($id)
     {
+      $this->deleteImagen($id);
       $sql = 'DELETE FROM producto WHERE id= :id';
       $sentencia = $this->db->prepare($sql);
       $sentencia->execute(array('id' => $id));
@@ -143,10 +158,10 @@
     function obtenerProductoConNombreCategoria($id_prod)
     {
       $sql  = 'SELECT producto.*, categoria.nombre AS nombre_categoria FROM producto, categoria WHERE producto.id = ? && producto.id_categoria = categoria.id ';
+      // $sql = 'SELECT * FROM producto WHERE id = ?';
       $sentencia = $this->db->prepare($sql);
       $sentencia->execute([$id_prod]);
-      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
-      $producto = $sentencia->fetchAll(PDO::FETCH_ASSOC);
+      $producto = $sentencia->fetch();
       $imagenes = $this->getImagenes($id_prod);
       $producto['imagenes'] = $imagenes;
       return $producto;
